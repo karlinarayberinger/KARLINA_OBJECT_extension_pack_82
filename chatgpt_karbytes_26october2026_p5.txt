@@ -84,3 +84,19 @@ Excellent! I will copy and paste those URLs into the temp.txt file in projects.
 ChatGPT:
 
 Sounds good, karbytes. That will make `temp.txt` a 50-file URL inventory, including a link to itself.
+
+karbytes:
+
+Now what I'd like you to do with each of those URLs you generated is the following...
+
+Change the GitHub user account name from informationcrystals to karlinarayberinger.
+
+Change the GitHub repository name from projects to KARLINA_OBJECT_extension_pack_82.
+
+Turn the plain-text URL into a paragraph element according to the following template:
+
+[preformatted_text]
+
+<p><a style="background: #000000;color: #ff9000" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">https://karlinaobject.wordpress.com/public_domain/</a></p>
+
+[end preformatted_text]
