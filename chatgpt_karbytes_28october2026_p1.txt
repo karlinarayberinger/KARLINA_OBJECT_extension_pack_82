@@ -61,3 +61,13 @@ All **nine “(*)” hyperlinks** also work correctly. I downloaded each destina
 [end preformatted_text]
 
 The Ultimate Archive raw-file directory’s “(*)” link pointing into **extension pack 80** is therefore correct: that destination serves exactly the same HTML as the corresponding file stored in extension pack 82.
+
+karbytes:
+
+What I would like you to do now (just to be extra thorough with the interim auditing of the KARLINA_OBJECT_extension_pack_82 micro-directory) is the following...
+
+On the following web page, verify whether or not the sub-index pages whose index numbers are 285 to 293 contain all of the aforementioned hyperlinks with the one exception being that the links may appear in a different order than how they appear in the respective micro-directory surface (i.e. index.html) and each of the sub-index hyperlinks display the full URL they point to as their visible components:
+
+https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/
+
+(This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
