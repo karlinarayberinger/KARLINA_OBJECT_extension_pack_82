@@ -71,3 +71,38 @@ On the following web page, verify whether or not the sub-index pages whose index
 https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/
 
 (This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 2m 11s]
+
+**Yes—all requested links are present, with no discrepancies found.** Sub-index pages **285 through 293** collectively contain:
+
+- All **172 raw-file URLs** from the current extension pack 82 micro-directory.
+
+- All **nine destinations represented by “(*)” links**.
+
+- The micro-directory’s own URL, on page 285.
+
+Each of these **182 URLs appears exactly once**, and every hyperlink displays its complete destination URL as its visible text.
+
+[preformatted_text]
+
+| Sub-index | Raw-file URLs | “(*)” destinations | Micro-directory URL | Total |
+|---|---:|---:|---:|---:|
+| 285 | 18 | 2 | 1 | 21 |
+| 286 | 14 | 7 | 0 | 21 |
+| 287 | 19 | 0 | 0 | 19 |
+| 288 | 20 | 0 | 0 | 20 |
+| 289 | 21 | 0 | 0 | 21 |
+| 290 | 22 | 0 | 0 | 22 |
+| 291 | 22 | 0 | 0 | 22 |
+| 292 | 21 | 0 | 0 | 21 |
+| 293 | 15 | 0 | 0 | 15 |
+| **Total** | **172** | **9** | **1** | **182** |
+
+[end preformatted_text]
+
+I found **no missing URLs, duplicate URLs, unexpected destinations, or mismatches between displayed URLs and hyperlink targets**. Differences in ordering do not affect this result.
+
+The [precision-batches index](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/) correctly links to all nine sub-index pages. All nine returned HTTP 200, and each live page’s HTML exactly matches its current GitHub repository source.
