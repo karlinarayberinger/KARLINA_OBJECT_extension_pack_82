@@ -3486,6 +3486,8 @@ The audio begins at the start of the video. Its encoded duration is approximatel
 
 For the requested EXIF information, the file contains MP4/QuickTime metadata rather than a photographic EXIF record with camera exposure settings. Its relevant properties are:
 
+[preformatted_text]
+
 | Property | Recorded value |
 |---|---|
 | Filename | the_big_green_thing_25oct2026_p11.mp4 |
@@ -3517,6 +3519,8 @@ For the requested EXIF information, the file contains MP4/QuickTime metadata rat
 | GPS coordinates | Not present |
 | Camera manufacturer and model | Not present |
 | Lens and exposure settings | Not present |
+
+[end preformatted_text]
 
 The movie and track headers carry matching creation and modification timestamps. These are the values retained in the supplied file; they do not independently verify the recording device’s clock or establish a complete capture and editing history.
 
