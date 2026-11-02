@@ -82,7 +82,9 @@ relevant_KARBYTES_files[35]: https://karbytesforlifeblog.wordpress.com/karbytes_
 
 relevant_KARBYTES_files[36]: https://karbytesforlifeblog.wordpress.com/karbytes_is_stuck_deluxe_version/
 
-relevant_KARBYTES_files[37]: https://karbytesforlifeblog.wordpress.com/karbytes_stuck_web_pages
+relevant_KARBYTES_files[37]: https://karbytesforlifeblog.wordpress.com/karbytes_stuck_web_pages/
+
+relevant_KARBYTES_files[38]: https://karbytesforlifeblog.wordpress.com/gallery_of_the_stuck_karbytes/
 
 * * *
 
@@ -5676,7 +5678,7 @@ karbytes:
 
 Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
 
-https://karbytesforlifeblog.wordpress.com/karbytes_stuck_web_pages
+https://karbytesforlifeblog.wordpress.com/karbytes_stuck_web_pages/
 
 (This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
 
@@ -5793,3 +5795,11 @@ The directory’s public-domain designation is another part of its presentation.
 The relevance markers ultimately make the index an interpretive document despite its minimal prose. They emphasize both the original trapped-state narrative and its later ethical revision; both personal experience and fictional elaboration; both image-based representation and extensive conversation. The selection suggests that understanding stuckness requires attending to the person who experiences it, the structures that represent it, the archive that preserves it, and the freedom that person should retain.
 
 KARBYTES_STUCK_WEB_PAGES therefore organizes a developing inquiry into embodiment, permanence, imagination, and agency. Its linked materials repeatedly turn a body into a threshold, a vessel, a server, or part of an encompassing world. Its concluding entry reopens the relationship between those structures and the person within them. The collection preserves the intensity of enclosure while also making room for a subject who can choose, depart, remain distinct, and continue living beyond the image in which it once appeared permanently fixed.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/gallery_of_the_stuck_karbytes/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
