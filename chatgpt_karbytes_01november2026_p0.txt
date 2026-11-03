@@ -156,6 +156,8 @@ relevant_KARBYTES_files[72]: https://karbytesforlifeblog.wordpress.com/journal_k
 
 relevant_KARBYTES_files[73]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_02november2026_p3.txt
 
+relevant_KARBYTES_files[74]: https://karbytesforlifeblog.wordpress.com/karbytes_feels_very_stuck/
+
 relevant_KARBYTES_files[x]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_02november2026_p1.txt
 
 * * *
@@ -12147,3 +12149,11 @@ The conversation also does not disclose how long OpenAI retains particular recor
 The exchange develops through increasingly careful distinctions. The first answer supplies the physical vocabulary of servers, storage, networks, racks, power, cooling, and protection. The second adds ownership, reservations, scheduling, model execution, and service scaling. The third explains why retaining records differs from processing them and why storage must be subdivided by purpose. The fourth introduces numerical estimates while specifying their dates, units, uncertainty, and limitations. The result is an account of AI as an activity carried out through managed physical infrastructure, together with an explanation of why plausible-looking percentages require careful interpretation.
 
 The document’s strongest quantitative conclusion is consequently bounded. It presents an estimated 2024 OpenAI cloud-computing spending split of roughly sixty-six percent research and unreleased-model work, seven percent final training for released models, and twenty-seven percent production serving. Separately, it presents a modeled facility-power split of forty-one percent GPUs, twenty-two percent other server components, eight percent external equipment, and twenty-nine percent facility overhead. Its answer to the user-storage question remains an acknowledged lack of a reliable, specifically applicable published percentage. The conversation establishes what those figures describe, what information would be needed to answer the remaining question, and why the accumulated records of user-agent interactions cannot be assigned a defensible infrastructure share from the estimates provided.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/karbytes_feels_very_stuck/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
