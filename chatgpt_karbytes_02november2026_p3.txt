@@ -167,3 +167,43 @@ To turn such a volume into the percentage you’re asking about, a provider woul
 karbytes:
 
 What is the data center usage by AI in terms of approximate percentage breakdown (especially OpenAI as an example)? 
+
+ChatGPT:
+
+[Worked for 3m 48s]
+
+**For OpenAI, a useful published example is an estimate of its 2024 cloud-computing spending.** It suggests the following approximate allocation:
+
+[preformatted_text]
+
+| Activity | Approximate share | What it includes |
+|---|---:|---|
+| **Research, experiments, and unreleased models** | **66%** | Testing approaches, experimental training runs, and developing models that were not released |
+| **Final training runs for released models** | **7%** | The particular training runs that produced released model versions |
+| **Serving users—inference** | **27%** | Running models to answer requests through OpenAI’s products and services |
+
+[end preformatted_text]
+
+I calculated these rounded percentages from Epoch AI’s estimates of approximately **$4.5 billion, $480 million, and $1.8 billion**, respectively. These are third-party estimates based on reported financial information and modeling, with substantial uncertainty. They describe **2024 spending**; they do not establish OpenAI’s current 2026 allocation or its shares of electricity consumption. [Epoch AI](https://epoch.ai/data-insights/openai-compute-spend?trk=public_post_comment-text\&utm_source=chatgpt.com)
+
+The distinction between the first two rows matters: developing a model involves considerable experimentation before its final training run. Research also uses inference—for example, to generate synthetic training data—so the last row represents production serving rather than every inference calculation performed internally. [Epoch AI](https://epoch.ai/gradient-updates/r-and-d-vs-training-compute?utm_source=chatgpt.com)
+
+**A second breakdown concerns where an AI facility’s electricity goes.** Epoch AI’s engineering model of a large GPU-based facility at peak operation gives these approximate, non-overlapping shares:
+
+[preformatted_text]
+
+| Equipment or infrastructure | Share of total facility power |
+|---|---:|
+| **GPUs** performing AI calculations | **41%** |
+| **Other components inside servers**, including CPUs, memory, local storage, and internal connections | **22%** |
+| **Equipment outside the servers**, including networking and management systems | **8%** |
+| **Cooling, power-conversion losses, lighting, and other facility overhead** | **29%** |
+| **Total** | **100%** |
+
+[end preformatted_text]
+
+I derived these shares from the study’s nested totals. The model relies largely on NVIDIA GB200 reference architectures and specifications; actual facilities vary, especially in cooling efficiency. It is an industry illustration rather than a measurement of OpenAI’s facilities. [Epoch AI](https://epoch.ai/data-insights/gpus-power-usage-in-ai-data-centers?utm_source=chatgpt.com)
+
+These tables answer different questions: **training, research, and serving users all consume GPUs, supporting servers, networking, and cooling.** Their percentages cannot be combined into one allocation.
+
+For your particular interest in accumulated user data, **neither estimate separately identifies the resources devoted to saved conversations and uploads**. Storage also supports model weights, training datasets, checkpoints, and working caches, so storage equipment cannot be attributed entirely to user archives. [docs.nvidia.com](https://docs.nvidia.com/certification-programs/certified-storage/latest/nvidia-certified-storage.html?utm_source=chatgpt.com)
