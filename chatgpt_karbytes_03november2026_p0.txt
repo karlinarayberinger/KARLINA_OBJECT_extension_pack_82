@@ -786,191 +786,187 @@ https://karlinaobject.wordpress.com/pi_approximation/
 
 ChatGPT:
 
-[Worked for 7m 45s]
+[Worked for 6m 18s]
 
-The document is a JavaScript program that implements a browser-based Monte Carlo simulation for approximating pi. It generates random points, classifies them according to whether they fall inside a circle inscribed within a square, draws them on an HTML canvas, counts the two categories, and continually recalculates an estimate of pi. It also manages the application’s initialization, countdown, button visibility, and timestamped event logging.
+PI_APPROXIMATION is an instructional webpage explaining how to build and use a browser-based application that estimates pi through a Monte Carlo dart-throwing simulation. It brings together a mathematical explanation, local setup instructions, complete HTML, CSS, and JavaScript listings, a screenshot of the HTML source, and five screenshots documenting the application’s initial, intermediate, and completed states. The material is attributed to karbytes, and the footer declares the page’s content public domain and gives July 12, 2025, as its last-updated date. [karlina_object](https://karlinaobject.wordpress.com/pi_approximation/?utm_source=chatgpt.com)
 
-The opening comment identifies the file as pi_approximation.js, attributes authorship to karbytes, gives December 29, 2024, as its date, and declares PUBLIC_DOMAIN as its license. The file contains twenty-five named functions. Extensive comments explain their purposes, expected arguments, return values, assumptions, and relationships to the corresponding webpage.
+The tutorial appears within the Karlina Object website, whose surrounding presentation associates the collection with creativity and the cosmos. Its subject connects several recurring areas represented in the site’s navigation: numbers, geometry, probability, numerical approximation, and programming. Within this setting, pi approximation becomes both a mathematical topic and a concrete example of constructing an observable computational process.
 
-The program is designed to operate within a companion HTML document. It expects a canvas, four numerical readouts, two buttons, and a timestamped-event container to exist under specific element identifiers. Its functions retrieve and modify these elements through the browser’s document interface. The JavaScript provides behavior, while the surrounding webpage supplies the elements on which that behavior depends.
+The opening explanation describes a square canvas whose sides measure 400 pixels. The application is intended to plot one randomly positioned, pixel-sized dart each second for 3,600 seconds, producing a nominal one-hour experiment. Each dart has integer Cartesian coordinates. Its classification depends on its distance from the center of the square.
 
-The file itself consists of function definitions. Loading it makes those functions available; initialization and starting are requested through calls from the surrounding page. The two principal entry points are initialize_application(), which prepares the interface, and start_monte_carlo_simulation(), which begins a timed run.
+A dart within a radius of 200 pixels from the center is assigned to the red category. A dart farther away is assigned to the blue category. The resulting canvas gradually displays a central circular region populated by red marks, with blue marks occupying the surrounding corner regions of the square.
 
-The mathematical intention is to estimate pi from the relationship between a circle and its enclosing square. The square is modeled with coordinates extending from negative 200 to positive 200 along each axis. A circle centered at the origin has a radius of 200. Points whose distance from the origin is no greater than 200 belong to the circle and are counted as red. Points farther away are counted as blue.
+The experiment uses the relationship between the areas of a circle and its enclosing square. A circle with radius 200 has an area of 40,000 multiplied by pi. A square with side length 400 has an area of 160,000. The circle therefore occupies pi divided by four of the square’s area.
 
-For a continuously and uniformly sampled square, the fraction of points inside the circle would approach the circle’s share of the square’s area. That share is pi divided by four. Multiplying the observed red fraction by four therefore supplies the familiar Monte Carlo estimate.
+If points sample the square uniformly, the fraction landing inside the circle should approximate that area fraction. Multiplying the observed red fraction by four then produces an estimate of pi. The program’s essential calculation is therefore four times the red count divided by the combined red and blue counts.
 
-The program expresses this calculation as four times the red count divided by the sum of the red and blue counts. Every displayed estimate is derived from those accumulated counts. The program does not insert a predetermined final value of pi into the readout.
+One introductory sentence describes the red fraction itself as an approximation of pi, omitting the multiplication by four. The explicitly displayed formula and the JavaScript both include that factor. Reading the prose alongside the formulas and implementation resolves the intended calculation: the unmultiplied fraction estimates approximately 0.785, while four times that fraction estimates approximately 3.14.
 
-The first function, generate_random_coordinate_scalar(), produces one coordinate. It begins by multiplying Math.random() by 201 and rounding downward, generating an integer magnitude from zero through 200. It then makes another random choice to select a sign. That sign comes from generating an integer from zero through ninety-nine and testing whether it is even or odd. Even results produce a positive sign, and odd results produce a negative sign.
+The tutorial also states the familiar definition of pi as a circle’s circumference divided by its diameter. This identifies the constant being estimated and places the probabilistic experiment in relation to elementary geometry.
 
-The magnitude is multiplied by the selected sign. The returned coordinate is consequently an integer between negative 200 and positive 200, inclusive. Positive and negative nonzero coordinates are treated symmetrically.
+Several short definitions support that explanation. The page describes a circular region through the equal distance of its boundary points from its center. It explains the radius as the distance from the center to the boundary, the diameter as the length of a segment passing through the center between two boundary points, and the circumference as the length of the curved boundary. It states that the diameter is twice the radius.
 
-The next function, generate_random_planar_point(), calls the scalar generator separately for the horizontal and vertical coordinates. It returns an object with properties named x_coordinate and y_coordinate. Each point therefore requires four calls to Math.random(): one magnitude choice and one sign choice for each coordinate.
+The page identifies pi as irrational and compares it with the golden ratio in that respect. Its explanation distinguishes irrational numbers from numbers expressible as an integer divided by a nonzero integer. The simulation nevertheless produces a finite numerical estimate from integer counts. This gives the application a useful conceptual tension: an irrational constant is approached through a succession of finite rational proportions.
 
-An important detail of this procedure is that the possible numerical coordinates do not all have equal probability. Zero can result from either sign applied to a zero magnitude. Each particular nonzero coordinate requires one specific magnitude and one specific sign.
+The tutorial offers two ways to engage with the application. It points toward a hosted version that readers can try in a browser, and it provides the materials needed to construct a local copy. The page therefore accommodates both immediate experimentation and examination of the underlying implementation.
 
-Assuming the random choices behave uniformly, zero therefore has probability one divided by 201, while each particular nonzero coordinate has probability one divided by 402. Zero is twice as likely as any individual nonzero coordinate. The generator remains symmetric around the origin, but its distribution gives additional weight to points on the coordinate axes.
+Its software-components section identifies three files. The interface belongs in pi_approximation.html. The stylesheet belongs in karbytes_aesthetic.css. The behavior belongs in pi_approximation.js. The instructions tell readers to place these files in the same directory and open the HTML file in a browser such as Firefox.
 
-The point generator also produces a finite integer lattice. There are 401 distinct numerical coordinates available along each axis, giving 160,801 distinct coordinate pairs. This is a discrete sampling model whose exact probabilities differ from the ideal continuous-area model used to motivate the experiment.
+This organization makes the division of responsibilities explicit. HTML establishes the document and its interface elements. CSS controls their presentation. JavaScript generates samples, performs calculations, draws marks, manages the timer, updates the readouts, and records events.
 
-The function is_point() validates the point representation. It requires exactly one argument, checks that both coordinate properties are numbers, verifies that both are integers, and checks that each falls within the permitted range from negative 200 through positive 200.
+The tutorial reproduces the source in preformatted text boxes and advises readers to scroll horizontally to see long lines. That instruction is practical because several function declarations, explanatory comments, formulas, and HTML elements extend beyond the visible width of a code box.
 
-A valid point returns true. An invalid point causes an explanatory message to be written to the browser console and returns false. Missing coordinates, fractional coordinates, out-of-range values, and unsuitable inputs therefore have a defined validation route. The function checks the required coordinate properties without requiring that they be the object’s only properties.
+The HTML section also discusses the difficulties of publishing executable-looking markup as readable webpage content. Angle brackets must remain visible without causing the browser or publishing system to interpret the displayed example as part of the tutorial’s own structure.
 
-The distance calculation is implemented through two functions. One approximates a square root, and the other uses that operation within the Euclidean distance formula.
+The page refers to the character identifiers U+003C and U+003E, corresponding to the ordinary less-than and greater-than signs used around HTML tags. Its practical concern is preserving those characters and the text between them when presenting source code through WordPress.
 
-The square-root function, approximate_square_root(), uses an iterative averaging procedure. It accepts one argument, checks that the argument is a number, and rejects negative values. It then initializes one working value to the input and another to one.
+A separate warning concerns an inserted zero-width space. In the displayed HTML listing, this invisible character occurs between the first two letters of the script element’s src attribute. The tutorial tells readers to remove it when copying the displayed code into an editor. This matters because the altered attribute name would otherwise fail to identify the JavaScript resource correctly.
 
-During each iteration, the first working value becomes the average of the previous two values. The second becomes the original input divided by the newly calculated first value. For the positive integer inputs relevant to the program, these values converge toward the square root.
+These instructions distinguish source code presented for reading from source code prepared for execution. The page supplies both the displayed listing and a reference to the source file, recognizing that publication formatting can introduce details that affect a copied program.
 
-The stopping condition uses a fixed precision-control value of 0.000000001. Iteration continues while the difference between the two working values exceeds that threshold. The function returns the first working value when the loop ends.
+The HTML listing begins with a comment identifying the file, its type, karbytes as its author, a July 10, 2023, date, and a public-domain license. It then supplies a complete HTML document containing a character-encoding declaration, a page title, references to the stylesheet and script, and an internal style rule for the canvas.
 
-This is an implementation of the averaging approach commonly associated with Heron’s method for square roots. It allows the program to expose an intermediate numerical algorithm inside the larger simulation instead of relying on the built-in square-root operation.
+That internal rule gives the canvas a white background and removes its border width. The surrounding stylesheet supplies the application’s darker overall appearance, allowing the plotting area to stand out sharply.
 
-The function’s documented input assumption is a nonnegative integer. That assumption matches the squared-coordinate sums generated by the distance calculation. The broader numerical validation is less restrictive than the comment: fractional numbers are not explicitly rejected.
+The body requests initialize_application() when the page loads. Its visible content begins with a PI_APPROXIMATION heading and a paragraph explaining the simulation’s dimensions, duration, sampling cadence, and color classifications.
 
-That distinction matters for inputs outside the intended application. For example, an input of 0.25 returns 0.25 rather than 0.5 because the initial difference fails the loop condition. Zero, however, returns zero correctly. These behaviors show that the function is suited to its intended nonnegative-integer use more narrowly than its number-type check alone might suggest.
+Two subsequent paragraphs present the circumference-to-diameter definition and the count-based approximation formula. Both are assigned the console class, which the stylesheet renders in green against black.
 
-The distance function, compute_distance_between_two_planar_points(), requires exactly two valid point objects. It subtracts their horizontal coordinates and their vertical coordinates, squares both differences, adds the results, and passes the sum to approximate_square_root().
+The interface contains START and RESET buttons. START calls start_monte_carlo_simulation(). RESET calls initialize_application(). The canvas is explicitly defined as 400 pixels wide and 400 pixels high and is identified as cartesian_plane.
 
-The returned value represents the distance between the two points. During dart classification, one point is the generated sample and the other is the origin. The general function nevertheless accepts any two valid points in the permitted coordinate range.
+Below the canvas are four numerical readouts: seconds_remaining, red_pixel_count, blue_pixel_count, and pi_approximation. Each contains a separately identified span that JavaScript can update. The HTML initially fills those spans with question marks, leaving initialization to establish valid starting values.
 
-If validation or another operation fails, the distance function reports the exception to the console and returns zero. This is a fallback value rather than a separate error object, so a caller must understand that zero can represent either a genuine zero distance or the function’s error response.
+An empty timestamped_events_log division follows the numerical output. It provides a destination for runtime messages generated by the program.
 
-The function convert_point_to_pixel() translates the mathematical coordinate system into the canvas coordinate system. In the mathematical model, the origin is at the square’s center, positive horizontal values extend rightward, and positive vertical values extend upward. On an HTML canvas, the origin is at the upper-left corner, with vertical coordinates increasing downward.
+The tutorial also includes a screenshot of this HTML source. It shows a dark editor-style background, line numbers, indentation, and syntax highlighting that distinguishes tags, attributes, comments, and ordinary text. This image provides a visual reference for the file’s organization in addition to the copyable listing.
 
-The conversion adds 200 to the mathematical horizontal coordinate and subtracts the mathematical vertical coordinate from 200. Thus, the mathematical origin becomes canvas position 200, 200. The mathematical upper-left corner becomes canvas position zero, zero. The mathematical lower-right corner becomes canvas position 400, 400.
+The stylesheet section explains how to save the presentation rules in karbytes_aesthetic.css. Its header also attributes the file to karbytes, dates it July 10, 2023, and declares it public domain.
 
-The vertical subtraction reverses the direction of the vertical axis, preserving the intended geometric orientation. This function is the bridge between abstract coordinate objects and visible drawing positions.
+The body rule specifies a black background, orange text, a monospaced font, a sixteen-pixel font size, ten pixels of padding, and an 800-pixel content width. These choices produce the application’s recognizable appearance: technical text in a narrow palette, a black surrounding field, and a bright square plotting surface.
 
-The central plotting function is plot_point_on_html_canvas(). It first checks its input with is_point(). If the supplied value is invalid, it substitutes the origin. This permits the routine to continue, although it means an invalid supplied point becomes an inside-circle sample.
+The declared width is a fixed 800-pixel value. Although the accompanying comment describes content as 800 pixels or less, the actual rule uses width rather than a maximum-width setting.
 
-The function calculates the point’s distance from the origin, converts its coordinates to a canvas position, retrieves the canvas, and obtains its two-dimensional drawing context.
+Input and selection controls receive black backgrounds, orange lettering, thin orange borders, rounded corners, internal padding, and the same monospaced typography. Their default browser appearance is suppressed. On mouse hover, the background and text colors are inverted, producing orange controls with black text.
 
-If the distance exceeds 200, the function draws a blue mark and increments the blue count. If the distance is no greater than 200, it draws a red mark and increments the red count. Points exactly on the boundary are therefore assigned to the red category.
+The stylesheet assigns cyan to the numerical output and green on black to console-class content. These color assignments distinguish the current measurements from explanatory prose and event messages.
 
-For both colors, the drawing operation begins a path, creates a rectangle with width one and height one at the converted position, assigns a stroke color, and strokes the path. The blue stroke uses the standard hexadecimal value for pure blue, and the red stroke uses the corresponding value for pure red.
+It also includes rules for cyan table-cell text and borders. The demonstrated interface does not use a table or selection menu, so these selectors extend beyond its immediate requirements. Their presence is consistent with the stylesheet’s role as a shared aesthetic file.
 
-The implementation uses outlined rectangles rather than a dedicated filled-pixel operation. Each mark has a nominal one-by-one canvas-unit rectangle, while its visible rasterization depends on stroke placement and canvas rendering. The counters consequently represent classified dart events rather than a measurement of uniquely colored display pixels.
+The JavaScript section provides the complete behavioral implementation. Its header dates this file December 29, 2024, while retaining karbytes as author and PUBLIC_DOMAIN as the license. The listing contains twenty-five named functions, supported by comments describing assumptions, arguments, return values, and intended uses.
 
-Repeated coordinates can occur, allowing later marks to overlap earlier marks. A repeated dart still increases a counter even when it adds little or no distinguishable new area to the image. The canvas accumulates the graphical record, while the numerical fields accumulate the number of sampling events.
+The first stage of the implementation generates coordinates. generate_random_coordinate_scalar() chooses an integer magnitude from zero through 200, then separately chooses a positive or negative sign. generate_random_planar_point() invokes that process twice and returns an object containing horizontal and vertical coordinate properties.
 
-After drawing and counting a point, the plotting function calls update_pi_approximation(). Each successful dart therefore produces an immediate numerical update.
+The resulting coordinates lie between negative 200 and positive 200, inclusive. Their representation places the mathematical origin at the center of the modeled square.
 
-The red and blue counters are managed through four functions. increment_red_pixel_count() and increment_blue_pixel_count() read the current values from their corresponding HTML spans, convert them to integers, add one, and write the updated values back. get_red_pixel_count() and get_blue_pixel_count() retrieve and return the parsed counts.
+The function is_point() validates this representation. It checks that the expected coordinate properties are numbers, that they are integers, and that they fall within the permitted range. Invalid inputs produce explanatory console messages and a false result.
 
-This design makes the displayed HTML values part of the program’s working state. The counts are repeatedly read from the document rather than maintained exclusively in separate JavaScript variables. The interface serves both as a presentation layer and as a store for values used by subsequent calculations.
+The program computes distance using a separate function that subtracts coordinates, squares the differences, adds them, and takes an approximate square root. This exposes the ordinary Euclidean distance formula directly in the implementation.
 
-The counter helpers assume values between zero and 3,600. Under the intended run structure, the two category counts together reach 3,600 because exactly one point is classified during each scheduled step.
+The square-root operation is implemented through an iterative averaging method. One working value begins at the input and another at one. The function repeatedly replaces one with their average and the other with the original input divided by that average. It stops when the difference between the working values falls below a fixed precision threshold.
 
-The function update_pi_approximation() retrieves both counts, computes four times the red fraction, and writes the result into the pi readout. It does not apply explicit decimal rounding. The displayed numerical representation therefore comes from JavaScript’s ordinary conversion of the calculated number into text.
+The threshold is one billionth. For the nonnegative integer inputs generated by the program’s squared-coordinate sums, this procedure supplies the distance approximation used in classification.
 
-An initial estimate of zero is assigned during initialization. That zero is a starting display value. If the update function were called while both category counts were zero, its expression would divide zero by zero and produce NaN, meaning “Not a Number.” Initialization avoids that operation by directly assigning zero.
+The function convert_point_to_pixel() translates mathematical coordinates into canvas coordinates. It adds 200 to the horizontal coordinate and subtracts the vertical coordinate from 200. The mathematical origin consequently maps to the canvas center at position 200, 200.
 
-After the first actual dart, the calculated estimate must be either four or zero. A red first dart gives a red fraction of one, while a blue first dart gives a red fraction of zero. The estimate becomes more informative as additional samples accumulate.
+The vertical subtraction accounts for the difference between a Cartesian plane, where positive vertical values extend upward, and a canvas, where vertical positions increase downward from the upper-left corner.
 
-Two functions manage the countdown. get_seconds_remaining() reads the remaining-time span and returns its parsed value. decrement_seconds_remaining() reads that value, subtracts one, and writes the result back. Both include checks against the intended zero-to-3,600 range.
+The main plotting routine validates its input, calculates the distance from the origin, converts the position, and obtains the canvas’s two-dimensional drawing context. Distances greater than 200 produce blue marks. Distances no greater than 200 produce red marks, including points exactly on the boundary.
 
-The countdown represents scheduled simulation steps. It begins at 3,600 and decreases once per timer callback. Its normal relationship to the counters is that the red count plus the blue count equals 3,600 minus the remaining count.
+Each mark is drawn as a stroked rectangle with nominal width and height of one canvas unit. The appropriate color counter is incremented, and the approximation is recalculated.
 
-That relationship follows from the callback’s sequence: each step decrements the countdown and plots one newly generated point. An isolated execution check confirmed this normal lifecycle through all 3,600 steps.
+The counters record sampling events. Repeated coordinates can cause marks to overlap, so the number of darts counted need not equal the number of separately distinguishable colored locations in the image.
 
-Two drawing helpers prepare the coordinate axes. draw_horizontal_line_through_middle_of_canvas() draws a black, one-pixel-wide line from position zero, 200 to position 400, 200. draw_vertical_line_through_middle_of_canvas() draws the corresponding line from position 200, zero to position 200, 400.
+Counter helpers read numerical values from the webpage, parse them as integers, increment or retrieve them, and write updated values back. The displayed spans therefore serve as part of the program’s working state.
 
-These lines intersect at the canvas center. They provide a visual reference for the Cartesian origin and divide the square into four quadrants.
+update_pi_approximation() retrieves both counts and calculates four times the red fraction. It writes the resulting JavaScript number directly into the approximation readout without an explicit rounding step.
 
-The axes are drawn during initialization. Subsequent dart marks are added to the existing drawing surface. The program does not reconstruct the complete image after each point, and marks can be drawn over portions of the original axes.
+The long decimal representation visible in the screenshots consequently reflects the arithmetic result’s formatting. It does not establish an equally large number of accurate digits of pi. Statistical accuracy depends on the sampling model and accumulated outcomes.
 
-The clear_canvas() helper removes drawing content using clearRect() across the canvas’s actual width and height. It also closes the current path. It does not itself redraw the axes or paint a white background; those responsibilities belong to other drawing calls or the surrounding page’s presentation.
+Other helpers retrieve and decrement the countdown. Two drawing functions create horizontal and vertical black axes through the canvas center. clear_canvas() removes existing drawing content so the axes and samples can be rebuilt for another run.
 
-Although clearing reads the canvas dimensions, most of the geometric implementation assumes the specific 400-by-400 model. The origin translation, axis positions, radius threshold, and coordinate limits are fixed around the values 200 and 400. The program is organized around this particular demonstration rather than parameterizing all geometry through a single adjustable size.
+Four additional functions hide and reveal START and RESET by changing their display properties. These helpers implement the normal progression from preparation through execution to completion.
 
-Four short functions control button visibility. hide_start_button() and hide_reset_button() set the corresponding display property to none. unhide_start_button() and unhide_reset_button() set it to block.
+initialize_application() records an initialization timestamp, hides RESET, reveals START, clears the canvas, and redraws the axes. It sets the countdown to 3,600, both color counts to zero, and the displayed approximation to zero.
 
-These functions establish the normal interaction sequence. Before a run, START is visible and RESET is hidden. During a run, both are hidden. After completion, RESET becomes visible while START remains hidden. Resetting restores the initial arrangement.
+Initialization also appends its message to the event log. It preserves earlier entries rather than clearing them, allowing the current page to retain a record of repeated initialization and simulation events.
 
-The function initialize_application() coordinates preparation of the interface. It captures the current time using Date.now() and constructs a message recording that initialization was called. It writes this message to the browser console.
+start_monte_carlo_simulation() records a start message and calls initialization again. It then hides START and creates an interval requesting one callback every 1,000 milliseconds.
 
-It then hides RESET, shows START, clears the canvas, and draws both central axes. It retrieves the four numerical readouts and assigns their starting values: 3,600 seconds remaining, zero red darts, zero blue darts, and a displayed approximation of zero.
+Because initialization hides RESET, both buttons are hidden during the normal running state. The visitor observes the accumulating plot and changing numerical values until completion.
 
-Finally, initialization appends its timestamped message to the webpage’s event log. The same event therefore appears in the developer console and in the designated on-page logging area.
+Each callback generates a point, decrements the countdown, plots and classifies the point, updates the counts and estimate, and checks whether the remaining value has reached zero.
 
-Initialization preserves existing log content. It appends a new entry rather than emptying the log. This creates a distinction between resetting the experiment and retaining a record of activity within the currently loaded page.
+On the final normal step, the program includes the last dart before clearing the interval. It then reveals RESET and records the completion event. The finished plot and numerical result remain visible until the visitor resets the application.
 
-The function start_monte_carlo_simulation() captures another timestamp and records that the simulation has started. It sends the message to the browser console and appends it to the on-page event log.
+The event messages use timestamps measured in milliseconds from the beginning of January 1, 1970, in Coordinated Universal Time. The program writes these messages both to the developer console and to the webpage’s event-log region.
 
-It then calls initialize_application(). Starting a run therefore resets the canvas, countdown, and numerical counters before scheduling any darts. This also generates another initialization entry immediately after the start entry.
+The countdown measures completed callbacks rather than repeatedly calculating a deadline from the current clock. Its intended duration is therefore 3,600 nominal one-second steps, while its start and completion timestamps record separate wall-clock observations. [karlina_object](https://karlinaobject.wordpress.com/pi_approximation/?utm_source=chatgpt.com)
 
-That order explains why a normally used page can contain an initial page-load initialization message, followed later by a start message and another initialization message. These entries correspond to the code’s explicit sequence.
+The tutorial’s five interface screenshots provide a concrete account of that lifecycle. They show the initial condition, three intermediate stages, and one completed run. Their captions describe what the interface could look like at specified stages, appropriately leaving room for different random outcomes in other executions.
 
-After initialization, the start function hides START and creates an interval through setInterval(). The requested interval is 1,000 milliseconds. Its callback calls plot_random_pixel_on_square_canvas() and passes along the interval handle.
+The initial screenshot shows the orange application heading and explanation, green formulas, a visible START button, and an empty white canvas divided by two perpendicular axes. The numerical output is cyan. The countdown reads 3,600, both dart counts are zero, and the approximation is zero. A green initialization message appears beneath the readouts.
 
-Because initialization has already hidden RESET, both controls are absent during the normal run. The first dart is scheduled for the first interval callback rather than being plotted immediately within the start function.
+The white plotting region occupies the left portion of the application’s broader black background. This leaves substantial open black space to its right and makes the square’s geometry visually prominent.
 
-The function plot_random_pixel_on_square_canvas() performs each timed step. It generates a random point, decrements the countdown, retrieves the updated remaining value, and plots the point. Plotting includes classification, drawing, counting, and recalculating the estimate.
+The first progress screenshot represents 260 elapsed simulation steps, equivalent to four minutes and twenty seconds. It shows 3,340 seconds remaining, 203 red darts, and 57 blue darts.
 
-After processing the point, the callback checks whether the remaining count is exactly zero. If so, it clears its interval, reveals RESET, and calls finish_simulation().
+Those counts total 260, matching the elapsed counter value. Four times 203 divided by 260 gives the displayed estimate of 3.123076923076923.
 
-This ordering ensures that the final dart is included before the normal completion operations occur. The last step takes the countdown from one to zero, adds the last classified point, updates the displayed estimate, and then ends the repeating schedule.
+The marks remain relatively sparse at this stage. Red samples are concentrated within the circular region, while blue samples occupy the outside portions near the corners. The axes remain readily visible through the largely unoccupied background.
 
-The function finish_simulation() supplies the completion message. It captures the current time, writes a message to the browser console, and appends that message to the on-page event log.
+The second progress screenshot represents 895 elapsed steps, or fourteen minutes and fifty-five seconds. It shows 2,705 seconds remaining, 692 red darts, 203 blue darts, and an estimate of 3.0927374301675976.
 
-Actual interval cancellation and the change in RESET visibility occur in the timer callback. The completion-message function itself handles logging. This separation assigns lifecycle control to the callback and event reporting to the finishing helper.
+The red and blue counts again sum exactly to the elapsed number of steps. More points make the circular classification increasingly apparent, but the numerical estimate has moved farther from pi than it was in the earlier screenshot.
 
-After normal completion, the final canvas, counts, and approximation remain visible. Pressing RESET calls initialization again, clearing the drawing and restoring the starting values while preserving the log’s earlier entries.
+This is an instructive feature of the example. Additional random samples do not guarantee that every intermediate estimate will be more accurate than its predecessor. The sample proportion fluctuates as outcomes accumulate.
 
-The log therefore accumulates initialization, start, and finish events across repeated uses of the same loaded page. It does not preserve a separate numerical result for every completed run. Resetting replaces the current counts and estimate, while earlier event messages remain.
+The third progress screenshot represents 2,435 elapsed steps, or forty minutes and thirty-five seconds. The remaining count is 1,165. The red count is 1,902, the blue count is 533, and the displayed estimate is 3.124435318275154.
 
-The logging format has a small implementation difference among event types. Initialization and completion messages are appended inside paragraph markup. The start function uses empty prefix and suffix strings, appending its message without those paragraph wrappers. The chronological content is still added, but its markup structure differs.
+At this stage, the circular region is much more densely articulated by red marks. Blue marks define the surrounding corner regions, while white gaps remain between sampled locations.
 
-All event messages describe their timestamps as milliseconds since the beginning of January 1, 1970, in Coordinated Universal Time. These values are obtained at execution time. The file does not contain a fixed runtime date or a stored historical simulation result.
+The estimate has moved closer to pi again. Its absolute difference from pi is approximately 0.01716, corresponding to a relative error of about 0.546 percent.
 
-The distinction between timestamps and countdown is consequential. Date.now() records wall-clock time at initialization, start, and finish. The countdown, however, measures completed interval callbacks rather than repeatedly subtracting the current clock from a deadline.
+The final screenshot shows zero remaining steps, 2,801 red darts, and 799 blue darts. The counts sum to 3,600. The displayed approximation is 3.112222222222222.
 
-The requested cadence is one callback per second, producing a nominal one-hour run. Browser scheduling delays or suspension can affect the actual elapsed duration. The countdown records progress through 3,600 scheduled samples, while the start and finish timestamps provide separate evidence about elapsed wall-clock time.
+RESET is visible above the completed plot. A completion message has been added to the log, joining the earlier initialization and start messages.
 
-The timer handle is local to the start function and retained by the callback closure. This allows the callback to cancel its own interval when the countdown reaches zero.
+The final estimate is approximately 0.02937 below pi, a relative error of about 0.935 percent. It is less accurate than the estimate in the preceding illustrated stage, despite using the full sample.
 
-The code relies on the intended button sequence to guide ordinary interaction. It does not maintain a separate active-run flag, and initialization does not cancel an already active interval. Repeated programmatic calls to the start function could consequently create multiple intervals, while a direct initialization call during a run could reset the visible state without stopping the existing schedule.
+Taken together, the examples show a nonmonotonic numerical progression: approximately 3.12308, then 3.09274, then 3.12444, and finally 3.11222. All four illustrated estimates lie below pi, but their distance from it changes in both directions.
 
-Those possibilities are outside the normal interface sequence, which hides both buttons during execution. They show that the program’s ordinary lifecycle is enforced substantially through visibility and expected use.
+The sequence therefore demonstrates both the increasing visual density of the plot and the fluctuating numerical behavior of the estimator. A more developed image does not imply that every later numerical readout must improve.
 
-Several validation details are also important when distinguishing documented assumptions from exact behavior. The count and countdown helpers use parseInt() and compare the result with their allowed bounds. These comparisons do not reject NaN, because comparisons between NaN and ordinary numbers do not satisfy either inequality.
+The screenshots share the same initial initialization and simulation-start timestamps, presenting them as stages of one example progression. The initialization value is 1,670,837,054,862 milliseconds after the Unix epoch. The simulation-start value is 1,670,837,080,021 milliseconds. The completion value is 1,670,840,694,601 milliseconds.
 
-Malformed numerical text can therefore pass those particular range checks and propagate an invalid numerical state. Initialization supplies valid values during normal operation, but the helpers are not complete validators for every possible alteration of their HTML fields.
+These values encode December 12, 2022. The initial event corresponds to 09:24:14.862 UTC, the start to 09:24:40.021 UTC, and the finish to 10:24:54.601 UTC.
 
-The bounds are checked before incrementing or decrementing. An increment helper called when its count is already 3,600 can write 3,601. The decrement helper called when the remaining value is already zero can write negative one.
+The displayed start occurs 25.159 seconds after the initial initialization. The recorded interval from start to finish is 3,614.58 seconds, exceeding the nominal 3,600-second schedule by 14.58 seconds.
 
-The normal 3,600-step schedule avoids these extra operations by ending when the countdown becomes zero. The helper behavior nevertheless differs from a strict guarantee that every call preserves the documented bounds.
+That difference supplies an example of the distinction between a requested callback cadence and recorded elapsed time. The screenshots establish the timestamp difference without identifying its precise cause.
 
-Error handling is widespread throughout the helper functions. Many operations are enclosed in try-and-catch blocks that report the function involved and an explanatory message to the browser console. Depending on the function, an error can produce false, zero, or an implicit undefined return.
+The page consequently contains several temporal layers: example execution timestamps encoding 2022, HTML and CSS headers dated 2023, a JavaScript header dated 2024, and a webpage update declaration dated 2025. These dates belong to different parts of the document and do not constitute a single common creation date. [karlina_object](https://karlinaobject.wordpress.com/pi_approximation/?utm_source=chatgpt.com)
 
-These responses allow many errors to be reported without an uncaught exception terminating the immediate operation. They also mean that fallback values need interpretation. A returned zero does not always distinguish a valid mathematical result from an error response, and an invalid point passed to the plotting function becomes an origin sample that increments the red count.
+A detailed reading also distinguishes the simulation’s pedagogical ideal from its precise sampling implementation. The generator chooses a magnitude and then a sign. Zero can result from either sign, making it twice as likely as any particular nonzero coordinate.
 
-The most significant mathematical qualification concerns the precise sampling distribution. The intended continuous-area reasoning is clear, but the implemented generator samples integer coordinates with additional probability assigned to zero.
+Together with the finite integer grid and inclusive endpoints, that changes the exact distribution from uniform continuous sampling over the square. The point generator remains symmetric, but symmetry alone does not make all possible positions equally probable.
 
-A calculation from the code’s probabilities makes that difference explicit. Assigning a weight of two to coordinate zero and a weight of one to every nonzero coordinate gives a total weight of 402 along each axis. The combined point space therefore has a total weight of 161,604.
+A mathematical calculation from these sampling rules gives an expected approximation of approximately 3.12943, rather than exactly pi. This is an analytical consequence of the embedded code, not a value asserted by the tutorial.
 
-Enumerating the integer-coordinate outcomes classified inside or on the radius-200 circle gives an inside weight of 126,432. Four times that inside fraction is approximately 3.1294274894.
+Finite runs fluctuate around the expectation associated with their actual sampling distribution. Increasing the sample count reduces random variation under the method’s usual assumptions, but it does not automatically remove a difference introduced by the sampling model itself.
 
-Under the assumption of uniform random choices, this is the expected estimate associated with the implemented discrete generator. It is about 0.01217 below pi, corresponding to a relative difference of approximately 0.387 percent.
+Some implementation assumptions are similarly narrower than the function names might initially suggest. The square-root helper is designed around nonnegative integer inputs. For a fractional input between zero and one, its stopping condition can return the input rather than its square root. The simulation’s own squared-coordinate sums satisfy the intended integer assumption.
 
-This is a mathematical inference from the source’s sampling rules, rather than a value displayed or stated by the program. It means that finite-sample fluctuations occur around a slightly shifted expectation produced by the discrete, weighted coordinate distribution.
+The numerical-field helpers also assume well-formed values supplied through initialization and normal execution. Their range comparisons do not independently reject every malformed numerical state. These details matter when interpreting the code as a particular educational implementation rather than a general-purpose numerical library.
 
-The extra probability at zero gives points on the central axes more weight, while the finite integer grid and inclusive endpoints change the relationship to continuous area sampling. Those choices together determine the exact expected ratio. A much larger hypothetical sample would reduce random fluctuations without automatically removing this difference in expectation.
+The normal interface sequence keeps the application within its expected lifecycle. It prepares valid counters, permits one ordinary start action, hides controls during execution, terminates at zero remaining callbacks, and then permits reset.
 
-Canvas boundaries introduce a separate visual consideration. The coordinate converter can return 400 even though a 400-pixel canvas has pixel indices extending from zero through 399. Some rectangle strokes consequently lie on the outer boundary and can be clipped.
+The tutorial’s strength as a document lies in the availability of these different levels of inspection. A reader can understand the geometric intention, reconstruct the application from its files, examine individual functions, recognize the intended visual states, and check the numerical examples against the displayed counts.
 
-The statistical counters still count those generated dart events. Together with repeated coordinates and stroke rasterization, this reinforces the distinction between the number of samples processed and the number of individually distinguishable colored pixels visible in the image.
+Its source listings expose how an abstract probability argument becomes a sequence of browser operations. Random coordinate generation creates samples. Validation establishes their representation. Distance calculations classify them. Coordinate conversion places them on a drawing surface. Counters retain totals. A formula converts those totals into an estimate. Timer callbacks repeat the process, while event messages make its lifecycle observable.
 
-The program retains its working results in the current page’s numerical fields and drawing surface. Its event history is appended to the page and sent to the console. The script contains no network requests, export procedure, or persistent-storage mechanism for saving runs.
+The public-domain declarations and local implementation instructions support that instructional structure. The application is presented as material readers can examine and reproduce, with its mathematical explanation, executable components, and example outputs gathered into one tutorial.
 
-Its instructional character comes from making the calculation visible at several levels. Point objects expose the coordinate model. The distance helper exposes the geometric classification. The canvas exposes accumulated samples. The counters expose the observed category totals. The pi readout exposes the calculation derived from those totals, while the timestamps expose the experiment’s lifecycle.
-
-The extensive comments also make the file a document about the program’s construction. It breaks one experiment into named operations that can be read individually: generating, validating, measuring, converting, drawing, counting, initializing, scheduling, and finishing.
-
-The result is a deliberately observable numerical experiment. Its central procedure is straightforward enough to reconstruct from the counters, while its implementation shows how mathematical assumptions become concrete choices about random-number generation, integer coordinates, canvas geometry, browser state, and timer callbacks. Those choices explain both the intended demonstration of pi estimation and the particular behavior of this version of the program.
+The document preserves both a method and a worked demonstration of that method’s behavior. Its completed screenshot supplies a particular outcome, while its code explains how many other outcomes can be generated. The relationship among geometry, randomness, finite counts, elapsed steps, and visible marks gives the tutorial its central educational content.
 
 karbytes:
 
