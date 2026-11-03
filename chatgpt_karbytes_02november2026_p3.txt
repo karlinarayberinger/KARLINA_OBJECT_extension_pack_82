@@ -163,3 +163,7 @@ These categories can use different combinations of databases, disks, SSDs, and w
 For scale, consider a purely hypothetical service retaining **one million conversations averaging one megabyte each**: that is approximately **one terabyte of raw conversation data**. Three complete copies would occupy approximately three terabytes, before accounting for indexes, additional backups, or attachments. Images, audio, and video could increase that volume considerably.
 
 To turn such a volume into the percentage you’re asking about, a provider would need to disclose its retained interaction data, replication and backup arrangements, associated storage infrastructure, and the total resource budget being compared. **The broad 5% electricity estimate does not supply those missing details.**
+
+karbytes:
+
+What is the data center usage by AI in terms of approximate percentage breakdown (especially OpenAI as an example)? 
