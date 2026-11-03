@@ -83,3 +83,11 @@ ChatGPT:
 Yes—that works when you **commit the addition and then commit the removal** on the publishing branch. The new commits trigger deployment, while `index.html` ends up exactly as it started. [docs.github.com](https://docs.github.com/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site?utm_source=chatgpt.com)
 
 Adding and removing the character before committing leaves no net change, so that alone wouldn’t trigger a deployment.
+
+karbytes:
+
+Thanks for calling attention to the detail of that "trick" I neglected to mention. Of course I meant to imply that two separate and temporally adjacent commits are used for that trick. The first commit adds the surplus letter while the second commit removes that surplus letter.
+
+ChatGPT:
+
+Got it. Thanks for clarifying what you meant by the trick.
