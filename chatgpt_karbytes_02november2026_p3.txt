@@ -133,3 +133,33 @@ As a simple hypothetical example, allocating **64 GPUs for six hours** provides 
 karbytes:
 
 What percentage of data center resources (for AI) are used solely for file storage (especially of user data amassed across user-agent interactions)?
+
+ChatGPT:
+
+[Worked for 2m 21s]
+
+**I couldn’t find a reliable published percentage specifically for the AI infrastructure used to retain users’ conversations, uploads, and other interaction data.** Public reports generally group storage together without separating what the stored information is used for.
+
+One useful benchmark is the International Energy Agency’s **2025 estimate that centralized storage and backup systems account for around 5% of modern data centers’ electricity consumption.** That covers data centers generally, including non-AI services. It cannot establish the percentage devoted to storing AI conversations. [IEA](https://www.iea.org/reports/energy-and-ai/energy-demand-from-aI?utm_source=chatgpt.com)
+
+“Resources” also needs a unit: storage’s percentage of **electricity consumption, equipment cost, rack space, or operating expenses** can differ substantially.
+
+Within an AI service, several categories need to be distinguished:
+
+[preformatted_text]
+
+| Category | Examples | What the storage supports |
+|---|---|---|
+| **Retained user interaction data** | Saved messages, uploads, generated files, persistent agent memories | Preserving information between interactions |
+| **Other AI data** | Training datasets, model weights, saved training checkpoints | Developing and operating models |
+| **Working context and caches** | Intermediate representations of an active conversation | Generating responses efficiently |
+
+[end preformatted_text]
+
+These categories can use different combinations of databases, disks, SSDs, and working memory. For example, AWS documents storing persistent chat histories and agent memories in a database, while NVIDIA describes storage requirements for model loading, training checkpoints, and inference caches. [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/gen-ai-framework-connectors.html?utm_source=chatgpt.com)
+
+**Keeping a conversation saved and processing that conversation are different resource demands.** An archived transcript occupies persistent storage. When that transcript is supplied to a model as context, processing it also consumes computation and working memory. Some systems retain previously calculated context in specialized caches to reduce repeated computation. Consequently, resources associated with a user’s history extend beyond the space occupied by its saved text. [NVIDIA](https://www.nvidia.com/en-us/data-center/ai-storage/cmx/?trk=article-ssr-frontend-pulse_little-text-block\&utm_source=chatgpt.com)
+
+For scale, consider a purely hypothetical service retaining **one million conversations averaging one megabyte each**: that is approximately **one terabyte of raw conversation data**. Three complete copies would occupy approximately three terabytes, before accounting for indexes, additional backups, or attachments. Images, audio, and video could increase that volume considerably.
+
+To turn such a volume into the percentage you’re asking about, a provider would need to disclose its retained interaction data, replication and backup arrangements, associated storage infrastructure, and the total resource budget being compared. **The broad 5% electricity estimate does not supply those missing details.**
