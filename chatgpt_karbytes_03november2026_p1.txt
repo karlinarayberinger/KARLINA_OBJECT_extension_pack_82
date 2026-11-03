@@ -60,3 +60,26 @@ For a simple HTML site, you can edit `index.html`, add this invisible comment, a
 
 Wait up to **10 minutes**, then check **Settings → Pages → Visit site**. [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site?utm_source=chatgpt.com)
 
+karbytes:
+
+Phew! I thought I would have to rebuild the whole repository to get the site back up. It's now live and seems to be up to date. Thanks for the reassurance. I thought that temporarily unpublishing the website (just long enough to "reset" it while it appeared stuck in the queue to be updated (possibly due to the repository's size which exceeds the recommended one gigabyte).
+
+ChatGPT:
+
+[Worked for 18s]
+
+You’re welcome—glad it’s live and up to date again! **Unpublishing removes the deployed website while preserving your repository’s files and Pages settings**, so a fresh deployment can bring it back without reconstructing the repository. [docs.github.com](https://docs.github.com/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site?utm_source=chatgpt.com)
+
+The earlier queue delay doesn’t establish that repository size caused it. Republishing worked here, but that doesn’t necessarily mean unpublishing was required to resolve the delay.
+
+karbytes:
+
+One "trick" I sometimes use to trigger a new deployment is adding a single character to the index.html file and then removing it.
+
+ChatGPT:
+
+[Worked for 18s]
+
+Yes—that works when you **commit the addition and then commit the removal** on the publishing branch. The new commits trigger deployment, while `index.html` ends up exactly as it started. [docs.github.com](https://docs.github.com/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site?utm_source=chatgpt.com)
+
+Adding and removing the character before committing leaves no net change, so that alone wouldn’t trigger a deployment.
