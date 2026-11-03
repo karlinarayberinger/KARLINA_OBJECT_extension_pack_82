@@ -20,6 +20,8 @@ relevant_KARBYTES_files[4]: https://karlinaobject.wordpress.com/pi_approximation
 
 relevant_KARBYTES_files[5]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/karbytes_onion_availability_logger_screenshot_03november2026.png
 
+relevant_KARBYTES_files[6]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_79/main/unlisted_web_page_karbytes_darknet_websites_root_directory_web_page.html
+
 * * *
 
 karbytes:
@@ -1081,3 +1083,11 @@ The most recent visible observations are both counted as successful, but the rec
 As a document, the screenshot preserves a small operational history together with the instructions necessary to understand its setting. It identifies a target, states a nominal observation schedule, records times in two matching formats, distinguishes an error from returned responses, and summarizes the results numerically.
 
 Its four rows form a concise sequence: a returned response, a network error, and two further returned responses. The counters compress that sequence into three successes, one failure, and a seventy-five-percent success rate. The surrounding text explains the browser-based procedure through which those observations are intended to accumulate.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_79/main/unlisted_web_page_karbytes_darknet_websites_root_directory_web_page.html
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
