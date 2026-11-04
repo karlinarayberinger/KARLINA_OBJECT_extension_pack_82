@@ -14,6 +14,8 @@ relevant_KARBYTES_files[1]: https://karbytesforlifeblog.wordpress.com/karbytes_u
 
 relevant_KARBYTES_files[2]: https://raw.githubusercontent.com/karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt
 
+relevant_KARBYTES_files[3]: https://karbytesforlifeblog.wordpress.com/karbytes_full_genome/
+
 relevant_KARBYTES_files[x]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/karbytes_thinking_03november2026_p0.mp4
 
 * * *
@@ -147,3 +149,11 @@ The final linked object, named karbytes_human_genome.txt, changes from interpret
 The linked text contains 20 comment lines and 643,535 four-field records, totaling 16,330,970 bytes. Each tab-separated record has an identifier, chromosome label, reference position, and genotype field. The header specifies human reference assembly build 37 and says the calls are oriented to the reference’s plus strand. Most identifiers begin with the familiar rs prefix, and the rest use internal identifiers. A count of the genotype fields finds 12,467 entries represented by two dashes, the file’s no-call notation. Although the filename uses the word genome, the format is a large set of marker records at specified positions. It supplies individual genotype calls and gaps in those calls, rather than a continuous sequence listing every base. The file also preserves the provider’s warning that later downloads can differ as its genotype-calling process changes.
 
 The publication’s strongest documentary feature is that it keeps these forms available together. The screenshots fix the ancestry categories, confidence labels, estimated dates, and interface choices as they appeared in the July 2023 report. The text preserves the reference coordinates and marker calls underlying a much more granular kind of examination. The author’s short opening adds the reason for bringing them into a public archive and states the breadth of reuse it intends. A reader can therefore see what karbytes chose to make available, how 23andMe presented the ancestry interpretation at that time, and what the underlying downloadable record actually contains.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/karbytes_full_genome/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
