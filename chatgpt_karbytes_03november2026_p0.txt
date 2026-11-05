@@ -2770,3 +2770,11 @@ Step eight makes the physical and online preservation copies. The guide calls fo
 The final notes specify an assumption about the shape of the two main websites. Karlina Object’s START_PAGE lists thirty top-level pages, including itself as PAGE_0. Karbytes For Life Blog’s START_PAGE lists twenty, also including itself as PAGE_0. The guide treats those top-level directories as fixed. The instructions still call for updating material within that structure, including the home-page timestamp and the contents of the macro-directory. A new extension pack acquires an entry within the established directory system. The document also points to the March 30, 2026 ChatGPT conversation for more on the project’s software infrastructure and to KARBYTES_SYSTEM_SETUP_GUIDE_2025 for the infrastructure used to set up the working computers.
 
 The procedure follows a new pack from its first directory page to its preserved copies. Pack 61 gives karbytes a reusable starting structure. The Code Continues and macro-directory updates make its successor findable. The portfolio, apps, and darknet checks catch changes that affect related publications. The ZIP catalogs, update log, and checksums record the version that resulted. By the time karbytes writes the M-DISCs and submits files to the Wayback Machine, the guide has accounted for how to find the new files, which version contains them, and where copies of that version can be kept.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/karbytes_content_updating_rules/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
