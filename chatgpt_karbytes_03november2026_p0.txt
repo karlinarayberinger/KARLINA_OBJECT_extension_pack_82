@@ -60,6 +60,8 @@ relevant_KARBYTES_files[24]: https://karbytesforlifeblog.wordpress.com/journal_k
 
 relevant_KARBYTES_files[25]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_09october2025/
 
+relevant_KARBYTES_files[26]: https://karbytesforlifeblog.wordpress.com/karbytes_system_setup_guide_2025/
+
 * * *
 
 karbytes:
@@ -2682,3 +2684,11 @@ The mdisc_burner entry specifies an external Blu-ray reader and writer with M-DI
 The separately linked KARBYTES_SYSTEM_SETUP_GUIDE_2025 expands one part of that workflow. It starts from a fresh Linux installation made using a bootable flash drive and explains how to restore a copy of KARBYTES and equip the laptop for use. The guide covers restoring the collection from an M-DISC or downloaded catalog archives, finding additional Easter egg files, updating the system, and setting up Brasero, Cheese, OBS Studio, VLC, Tor Browser, Chromium, and Sublime Text. The October 9 journal identifies the roles those tools and devices serve. The companion gives the sequence karbytes follows to put a newly installed machine into working order.
 
 The journal records what has to be available for the collection to continue. A working laptop and phone produce material. The Ubuntu server makes two sites reachable through Tor. A hotspot can sustain the server’s connection when its usual network is unavailable. An external burner puts a full version of the collection onto physical media, while the Wayback Machine captures individual files. The dated receipts, the two versions of the journal, and the priority assigned to the newest discs give this account a concrete history. They show what karbytes acquired in October 2025, how it expected the equipment to work together, and which detail of the server routine it revised in August 2026.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/karbytes_system_setup_guide_2025/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
