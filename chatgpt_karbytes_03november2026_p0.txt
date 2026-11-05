@@ -66,6 +66,8 @@ relevant_KARBYTES_files[27]: https://karbytesforlifeblog.wordpress.com/expanding
 
 relevant_KARBYTES_files[28]: https://karbytesforlifeblog.wordpress.com/karbytes_content_updating_rules/
 
+relevant_KARBYTES_files[29]: https://karbytesforlifeblog.wordpress.com/karbytes_rules_for_itself/
+
 * * *
 
 karbytes:
@@ -2796,3 +2798,11 @@ CMR1 reserves authority over changes to one person and identifies that person by
 The page links to KARBYTES_RULES_FOR_ITSELF, and that companion links back. The two texts address different kinds of decisions made by the same author. KARBYTES_RULES_FOR_ITSELF describes how Kar Beringer speaks on its own behalf, treats its propositions as assumptions held without absolute certainty, and defines satisfaction through an individual’s sense that its time serves its authentic goals. KARBYTES_CONTENT_UPDATING_RULES applies the project’s identification of karbytes to the stewardship of a particular body of files. Its questions are how long that body of work remains open to revision and who has authority to revise it.
 
 The journal closes by pointing to EXPANDING_KARBYTES_BEST_PRACTICES, which carries those rules into the work of making an update. That guide describes creating a numbered extension pack, updating the directories through which it can be found, checking related publications, recording changes in repository archives, updating the blog’s timestamp and version records, and preserving copies on M-DISC and through the Wayback Machine. The update record is especially relevant to CMR0. When the publishing procedure records a new update, it gives readers a dated event from which the collection’s period of inactivity can later be measured.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/karbytes_rules_for_itself/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
