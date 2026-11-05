@@ -58,6 +58,8 @@ relevant_KARBYTES_files[23]: https://karlinarayberinger.github.io/KARLINA_OBJECT
 
 relevant_KARBYTES_files[24]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_24december2024/
 
+relevant_KARBYTES_files[25]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_09october2025/
+
 * * *
 
 karbytes:
@@ -2640,3 +2642,11 @@ After the five practices, the journal lists nine related KARBYTES publications, 
 The final warning gives one exact example of text corruption. Some apostrophes in files served from the onion host can appear as the three-character sequence â€™. Karbytes describes this as a translation issue. The example is consistent with the bytes of a curly apostrophe being interpreted under the wrong character encoding. The journal’s response is to identify the authoritative copies. Karbytes says the official files are published on the surface web and saved to the Internet Archive’s Wayback Machine. A reader who encounters a garbled passage on the onion site can therefore compare it with the official publication or a saved capture.
 
 The page gives karbytes several distinct places to look when maintaining the two sites. The Apache configuration identifies which site belongs to which port and which file opens by default. The local directory provides a place to edit B. The service commands show whether the two processes are running and let karbytes restart them individually. The wireless check addresses whether the laptop can stay connected while those processes run. Finally, the surface-web and archived copies give a reader a reference when the onion server delivers a file whose text appears altered. These details make the journal a record of the December 2024 setup and of the recurring work required to keep it usable.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/journal_karbytes_09october2025/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
