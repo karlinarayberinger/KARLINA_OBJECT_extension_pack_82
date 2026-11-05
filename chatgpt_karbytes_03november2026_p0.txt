@@ -62,6 +62,8 @@ relevant_KARBYTES_files[25]: https://karbytesforlifeblog.wordpress.com/journal_k
 
 relevant_KARBYTES_files[26]: https://karbytesforlifeblog.wordpress.com/karbytes_system_setup_guide_2025/
 
+relevant_KARBYTES_files[27]: https://karbytesforlifeblog.wordpress.com/expanding_karbytes_best_practices/
+
 * * *
 
 karbytes:
@@ -2722,3 +2724,11 @@ The final two installations use Ubuntu’s graphical App Center. For Chromium, t
 Sublime Text completes the sequence. The reader searches for Sublime in App Center, selects the editor, and installs it. Karbytes uses it to create and revise plain-text files and source code and generally pins it to the desktop bar. The desktop arrangement described across the guide gives recurring tasks their own entry points. Terminal is readily available for commands, Tor Browser for visiting onion sites, Chromium for surface-web access, and Sublime for writing and editing. The guide gives command-line and graphical launch routes for the other applications where it describes both.
 
 The final note identifies the guide as a dated edition and leaves open the possibility of later versions. Within this edition, the order records how karbytes makes a fresh installation usable. The collection comes back from a disc or a set of archives, with additional files recovered through the precision-batches directory. Ubuntu is updated, and the applications are installed to work with those files and make new ones. The last details are the shortcuts and bookmarks that make the recurring work easy to resume. The resulting laptop can carry a copy of KARBYTES, edit its source, record the camera or screen, reach its publications through the surface web or Tor, and prepare the next physical backup.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/expanding_karbytes_best_practices/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
