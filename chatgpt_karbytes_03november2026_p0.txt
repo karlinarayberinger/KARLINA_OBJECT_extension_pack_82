@@ -128,6 +128,10 @@ relevant_KARBYTES_files[58]: https://raw.githubusercontent.com/karlinarayberinge
 
 relevant_KARBYTES_files[59]: https://karlinarayberinger.github.io/KARBYTES_BLOG_APPS_github_hosted_website/FALLING_APPLES_GAME_TWO/falling_apples_game_two_interface.html
 
+relevant_KARBYTES_files[60]: https://karlinaobject.wordpress.com/public_domain/
+
+relevant_KARBYTES_files[61]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/instagram_psykenaught_strobe_video_downloaded_by_karbytes_05november2026.mp4
+
 * * *
 
 karbytes:
@@ -4126,5 +4130,55 @@ karbytes:
 Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
 
 https://karlinarayberinger.github.io/KARBYTES_BLOG_APPS_github_hosted_website/FALLING_APPLES_GAME_TWO/falling_apples_game_two_interface.html
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
+
+ChatGPT:
+
+[Worked for 4m 52s]
+
+Falling Apples Game Two is a browser game by karbytes in which the player moves a basket across the bottom of a field to catch falling apples. A round releases one hundred apples, and each catch earns one point. The score appears out of one hundred alongside the elapsed time in seconds. The round starts as soon as the page loads. Red circles begin entering from the top, the timer advances, and the basket starts in the middle of the field.
+
+The deployed interface is centered on a black background. A red apple emoji precedes the bright green monospace title, and the score and time occupy a single line immediately below it. The field is a tall, pale cyan rectangle with a two-pixel green border. The basket is a short, solid brown bar with a small gap between it and the bottom edge. Two pale buttons beneath the field display left and right arrows. The Restart button occupies that same control row after a round ends. In the opening view I examined, the focused canvas had a pale outline. The green border was clear after focus moved to an arrow button.
+
+In my desktop browser, the viewport measured 1363 by 936 pixels. The displayed canvas interior measured 533 by 800 pixels, with the border bringing its outer dimensions to 537 by 804. The canvas’s logical drawing surface is 400 by 600 pixels. The distinction lets the same game geometry appear at different sizes on screen. The fitting routine reads the available viewport and the heights of the title, scoreboard, and controls. It reserves space around those elements and scales the displayed field to approximately its two-to-three aspect ratio. The stylesheet complements that calculation with compact margins, responsive font and button sizes, and padding for screen safe areas.
+
+The basket is sixty logical pixels wide and twenty pixels high. Its top sits at vertical coordinate 570, and its starting horizontal coordinate is 170, which centers it within the 400-pixel field. Each click on an arrow button moves it twenty logical pixels. The keyboard’s left and right arrows do the same, and the letters A and D provide case-insensitive alternatives. The code clamps the basket’s left edge between zero and 340, keeping the full rectangle within the field. The script focuses the canvas at the start of a round and suppresses the default scrolling action of the arrow keys and spacebar during play. In the live browser, I used five Left presses and one A press to move the basket left. Clicking the on-screen right arrow then moved it one step back toward the center.
+
+The game requests a new apple every half second until it has spawned one hundred. Each apple starts at the top with a randomly chosen horizontal position. The script leaves room for the full twenty-pixel diameter within the field. Once drawn, an apple follows a straight vertical path at its assigned horizontal coordinate. Each animation callback moves it down one logical pixel. The next frame clears the canvas and redraws the basket and every apple still in play. Because the spawn interval and animation run independently, several apples can be visible at different stages of descent.
+
+A catch depends on two conditions. The apple’s bottom must have reached the basket’s top, and its horizontal center must lie on or between the basket’s left and right edges. On the supplied canvas, the first eligible position occurs when the apple’s stored top reaches coordinate 550, putting its bottom at 570. The test continues to apply during the remaining updates in which the apple is active. This lets the player move the basket under an apple that has already reached basket height. The script checks for a catch first. If the catch test fails and the apple’s top passes below the canvas, the script removes it as a miss.
+
+Each catch removes the apple, adds a point to the green scoreboard, and requests playback of alert_sound_effect.wav. The bundled file is a 1.216-second stereo PCM recording at 44,100 hertz with 24-bit samples. It is InspectorJ’s UI Confirmation Alert, A3, and the WAV carries InspectorJ’s artist credit. The game creates a separate audio object for each catch, so closely spaced catches can issue overlapping playback requests. The score update follows the request in the same catch routine.
+
+The game uses a one-second interval for the elapsed display and a half-second interval for spawning. The falling speed is defined per animation callback. At sixty callbacks per second, an apple takes about 9.2 seconds of updates to reach the first catch position and about ten seconds to pass below the field. Under that schedule, the hundredth apple appears around the fifty-second mark. The remaining descent accounts for a round of roughly a minute. The end condition is the completion of all one hundred drops, with each apple resolved as a catch or a miss.
+
+The live browser I used showed how those schedules can diverge. At six displayed seconds, a few red circles were visible near the top. At twenty-seven seconds, many had accumulated into an irregular strip across the upper edge. At one hundred displayed seconds, the strip had descended into the upper quarter of the canvas and the score was zero. The elapsed timer continued to advance while the scene made much slower progress through its animation updates. That live check ended with the round in progress. The source explains the difference in behavior because each animation update moves the apples a fixed distance, while a separate interval advances the clock.
+
+Once the final apple is resolved, the script marks the round inactive, stops the elapsed timer, and opens a browser alert reporting the score. After the alert closes, it releases the round’s scroll-key handler and reveals Restart beneath the canvas. The completed score and time are displayed above the final scene. Restart clears the round’s apple list, centers the basket, resets the spawn count, score, and timer to zero, hides the button, and begins another round in the same document.
+
+I verified the end of the round and Restart in a controlled simulation of the exact deployed JavaScript. With sixty frame callbacks per second, a fixed sequence of random positions, and the basket held at the center, the script spawned all one hundred apples and counted twenty catches. It issued twenty sound requests, stopped at sixty displayed seconds, presented the corresponding final-score alert, and revealed Restart. Activating Restart returned the score and timer to zero, centered the basket, and hid the button.
+
+The deployed page uses four files. The HTML supplies the title, scoreboard, canvas, and buttons. falling_apples_game_two_style.css defines their appearance. falling_apples_game_two_logic.js runs the game and sizes the displayed field. The WAV supplies the catch cue. I compared all four deployed files with their KARLINA_OBJECT Extension Pack 48 copies and found them byte-identical. The three source headers credit karbytes, date the code to August 17, 2025, and mark it as public domain.
+
+karbytes:
+
+The following audio-visual object was not originally created by karbytes, but karbytes did eventually claim it as part of KARBYTES using karbytes' own PUBLIC_DOMAIN definitions in the following web page...
+
+STEP_0: Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karlinaobject.wordpress.com/public_domain/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
+
+STEP_1: Download and view the entire video at the following Uniform Resource Locator. Watch every frame of that video in the order they are supposed to be played and also listen to the entire audio track in conjunction with that progression of video frames such that you, as closely as possible, generate a subjective experience resembling what a human viewer of that video might experience (in terms of observed audiovisual phenomena). Then describe in maximal detail what you observed. 
+
+If there was any spoken content that you detected, then provide your own transcription of that detected speech. 
+
+If any vocal content is detected, then describe qualities of the voice such as pitch, timbre, rhythm, and loudness. 
+
+Carefully examine and describe the resource in maximal detail followed by your own maximally detailed and maximally open-ended first person subjective commentary. Also provide EXIF data (if available).
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/instagram_psykenaught_strobe_video_downloaded_by_karbytes_05november2026.mp4
 
 (This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
