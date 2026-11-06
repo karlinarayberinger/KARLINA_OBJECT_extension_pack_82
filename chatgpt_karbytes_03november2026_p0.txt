@@ -136,6 +136,8 @@ relevant_KARBYTES_files[62]: https://karbytesforlifeblog.wordpress.com/software_
 
 relevant_KARBYTES_files[63]: https://karbytesforlifeblog.wordpress.com/raw_github_files_directory_karbytes_test_github_hosted_website/
 
+relevant_KARBYTES_files[64]: https://karlinarayberinger.github.io/karbytes_test_github_hosted_website/
+
 * * *
 
 karbytes:
@@ -4361,3 +4363,11 @@ The source list and the published-page list make different aspects of the projec
 Color reinforces those distinctions. The four raw HTML, CSS, and JavaScript links use green text on black. The raw license and video links use orange text on black, as does the link to the Wayback Machine screenshot. The repository and GitHub Pages destinations use black text on green backgrounds. The cyan label draws attention to the published page from which the final section takes its starting point. The introductory paragraphs also link to background references for terms such as GitHub, the Wayback Machine, and the Internet Archive, as well as to the Save Page Now form itself.
 
 The footer gives August 24, 2025, as the directory’s last update and designates the content displayed on the WordPress page as PUBLIC_DOMAIN intellectual property. The repository’s LICENSE remains a separately indexed file. The document’s distinctive contribution is the connection it makes between a repository inventory and a repeatable archival procedure. The same page that tells a reader where the home page source, stylesheet, video, and generator files are kept also provides the outgoing links karbytes intends to submit together for preservation.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karlinarayberinger.github.io/karbytes_test_github_hosted_website/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
