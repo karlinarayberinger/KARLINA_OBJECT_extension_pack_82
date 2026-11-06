@@ -138,6 +138,8 @@ relevant_KARBYTES_files[63]: https://karbytesforlifeblog.wordpress.com/raw_githu
 
 relevant_KARBYTES_files[64]: https://karlinarayberinger.github.io/karbytes_test_github_hosted_website/
 
+relevant_KARBYTES_files[65]: https://karbytesforlifeblog.wordpress.com/raw_github_files_directory_KARBYTES_BLOG_APPS_github_hosted_website/
+
 * * *
 
 karbytes:
@@ -4395,3 +4397,11 @@ A section titled KARBYTES continued connects the small test site to the larger c
 The visual design uses sans-serif body text, bold section names, short paragraphs, and horizontal rules between sections. The important links and captions carry most of the color. The opening reference to the published site sits in a yellow strip. The two demonstration captions use bright green highlights. The raw HTML links use green lettering on black, while the direct MP4 link uses orange lettering on black. The live generator link also uses green lettering on black. The onion link uses cyan lettering on black, making it visually distinct from the surrounding public-web links. The links are set to open their destinations in a separate tab or window, so the homepage can remain available as a reference.
 
 The document ends with two footer styles, both dated April 4, 2025. The footer labeled External to karbytes describes the update in terms of the HTML file and identifies the public location where its contents appear as a page with clickable links. The footer labeled Internal to karbytes describes the update in terms of the webpage and designates its displayed content as public-domain intellectual property, with a reference to the KARBYTES policy. The two footers close the page with the same distinction introduced at the top. The document has a source file that can be obtained directly and a published form in which its links, media player, and application launcher can be used.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/raw_github_files_directory_KARBYTES_BLOG_APPS_github_hosted_website/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
