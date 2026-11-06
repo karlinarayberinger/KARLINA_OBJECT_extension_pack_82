@@ -3346,3 +3346,11 @@ The first interface screenshot shows all 22 keys gray and a single green initial
 The September 13 demonstration is about forty-three seconds long. It films a laptop at an angle in a dim setting, with the instrument window visible on the screen. The camera moves between the virtual keyboard, the accumulating green console entries, and the physical keyboard below. Early sampled frames show the freshly loaded display and the first logged notes. Around fourteen seconds, A and S are green together. Later, W is green on its own at the far right of the lower row. A frame near the end shows C and H highlighted at the same time. The console grows as the demonstration proceeds, so even views taken between presses show the history of the playing.
 
 Frequency analysis of the recording supports what those frames and logs show. Early sections contain strong components near the F4 pitch assigned to A and the G4 pitch assigned to S. The section in which W lights up contains a strong component near the high C6 pitch at about 1,046.5 hertz. The video dates to the original keyboard-driven version. The touch behavior is documented by the later JavaScript revision. Together, the still images, recording, and source show the three effects of a note event at different times. The browser schedules a tone, the virtual key changes color for the duration of the input state, and the console retains a timestamped record that can still be read after the tone and highlight have ended.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_20/main/abridged_keyboard_musical_instrument.html
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
