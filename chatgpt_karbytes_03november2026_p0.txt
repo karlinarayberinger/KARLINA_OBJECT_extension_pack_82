@@ -76,6 +76,8 @@ relevant_KARBYTES_files[32]: https://karbytesforlifeblog.wordpress.com/best_prac
 
 relevant_KARBYTES_files[33]: https://karbytesforlifeblog.wordpress.com/karbytes_04_october_2024/
 
+relevant_KARBYTES_files[34]: https://karbytesforlifeblog.wordpress.com/raw_github_files_directory_MINDS_2020_SCREENSHOTS/
+
 * * *
 
 karbytes:
@@ -2948,5 +2950,43 @@ karbytes:
 Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
 
 https://karbytesforlifeblog.wordpress.com/karbytes_04_october_2024/
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
+
+ChatGPT:
+
+[Worked for 3m 7s]
+
+The page karbytes_04_october_2024 documents how karbytes hosted its first onion website on a Linux laptop and demonstrated it from an Android phone. It brings together three kinds of evidence. A photograph shows the phone reaching Apache’s default welcome page through the onion address. A Firefox screenshot shows the laptop serving the custom page locally, with its simulation already running. A video shows karbytes navigating from the public blog to the onion page on the phone and running the same application there. The page also reproduces the configuration instructions karbytes used and links to the source files for both the initial test page and the finished demonstration.
+
+The WordPress page reproduces karbytes_04_october_2024.txt from Karlina Object Extension Pack 22, a micro-directory in the raw-file macro-directory of Karbytes For Life Blog. The title and filename say October 4, 2024, while the journal header and the page’s last-update notice give October 2. The linked phone photograph and demonstration video are dated October 1 in their filenames, and the local Firefox screenshot is dated October 2. The journal names karbytes as its author and designates the content as public domain. The web presentation turns some of the copied text into hyperlinks. I examined the linked source files, both still images, and selected frames from the demonstration video. The account of the network setup comes from the journal.
+
+Karbytes says the project began with a search for free dark-web hosting. The services it found advertised as free were offline, and the available alternatives charged a fee. Since the intended site was a small demonstration of what an onion page could be, karbytes wanted to avoid paying a hosting provider. It also found the idea of serving the page from its own computer more engaging. The journal credits ChatGPT-4o with producing the instructions karbytes consulted and says the version reproduced on the page was abridged for brevity.
+
+The Apache part of those instructions begins with refreshing the package information and installing Apache on a Debian- or Ubuntu-based system. It then opens the server’s document directory, /var/www/html, in the Nautilus file manager with administrative privileges so the custom files can be placed there. The instructions edit Apache’s 000-default.conf in the sites-available directory. The example keeps the document root at /var/www/html and sets the DirectoryIndex for the port-80 virtual host to the chosen HTML file. Restarting Apache applies the configuration. In karbytes’ setup, that change determines which page the server returns when a browser asks for the site’s root.
+
+The Tor part installs the Tor package and edits /etc/tor/torrc. The example assigns the service directory /var/lib/tor/hidden_service/ and forwards the onion service’s port 80 to Apache on port 80 at the machine’s loopback address. After restarting Tor, the instructions read the generated onion hostname from the hostname file in that service directory. Apache and Tor have distinct roles in the arrangement. Apache supplies the page and its files. Tor supplies the route by which a Tor-capable client can request them. The journal makes remote availability conditional on the laptop being on and connected, with both services running and the correct files in place.
+
+The October 1 photograph preserves the initial result before Apache’s default page was replaced. It shows an Android phone held horizontally against a dark background. The display contains the orange Ubuntu emblem, the Apache2 Default Page heading, and the orange “It works!” panel. The onion hostname is visible in the browser bar. The linked index.html is the stock Ubuntu Apache welcome page shown on the phone. It includes an explanation of the default document root and the server’s configuration layout. In the journal’s sequence, this first test establishes that the phone can reach the server through the onion service while Apache is still delivering its default content.
+
+Karbytes considered two applications for the custom page. It first tried BEATS_MACHINE, which depended on the Web Audio API, and reports encountering a restriction in its Tor browser setup. The journal includes the feature check provided by ChatGPT-4o. It looks for either AudioContext or webkitAudioContext, creates an audio context when one is available, and otherwise displays an alert explaining that sound generation will fail. Karbytes ultimately chose PI_APPROXIMATION as the interactive demonstration. The new page used a canvas and numerical readouts to make its activity visible while it ran.
+
+The custom HTML welcomes the visitor to karbytes’ first onion page and dates its availability notice to October 1. It links back to the surface-web account of how it was created, identifies Karlina Object, Karbytes For Life Blog, and the project’s GitHub presence, and points to the separate surface-web tutorial for PI_APPROXIMATION. The linked source loads pi_approximation.js and karbytes_aesthetic.css. In the screenshot, an orange title appears on black above a pale green introduction. Cyan highlights the availability notice, yellow marks the description of the application, and green text sets out the mathematical relations. The canvas, counters, and timestamped event log occupy the lower part of the page. The counters are cyan, while the log is green, and both sit in panels outlined in magenta.
+
+PI_APPROXIMATION is a Monte Carlo simulation. Its white canvas is a square 400 pixels on each side, with horizontal and vertical lines marking the center. The intended run lasts 3,600 seconds and plots one randomly positioned dart per second. The JavaScript generates a pair of signed integer coordinates, converts the pair to a canvas position, and tests its distance from the center. A dart at or within 200 pixels of the center is red. A dart farther away is blue. The red points therefore accumulate within the inscribed circle, while the blue points occupy the parts of the square beyond its boundary. The app divides the red count by the total count and multiplies the result by four. The reason is geometric. A circle of radius 200 occupies pi divided by four of the area of a square with side length 400. The fraction of throws landing in the circle estimates that area ratio. The displayed estimate can change with each new throw, alongside the countdown and the two color counts.
+
+The local Firefox test comes after the change to Apache’s configuration. Karbytes says it refreshed Firefox at the laptop’s localhost address and saw that the server was now returning unlisted_web_page_karbytes_first_onion_web_page.html. The journal gives a screenshot restriction it encountered in Tor as the reason for using Firefox to record this view. The local request checks the file Apache delivers on the server machine. The photograph and video made with the Android phone document access through Tor from a separate device.
+
+The October 2 Firefox screenshot captures a run well under way. The square contains a dense scattering of red dots through the center and blue dots concentrated toward the corners. The readout shows 2,324 seconds remaining, 1,008 red throws, 268 blue throws, and an estimate of 3.1598746081504703. The counts total 1,276, corresponding to the 1,276 seconds that have elapsed in the app’s countdown. Below them, the event log records initialization and the start of the simulation using timestamps measured in milliseconds from the Unix epoch. The still captures both the custom page Apache served and a populated state produced by its script.
+
+The remote demonstration runs about two minutes and thirteen seconds. The phone is repeatedly held close to the camera in a dim room. Its bright screen is sometimes partly obscured by glare or turned away while karbytes operates it. The sampled sequence moves through the surface blog to the Extension Pack 22 directory, where long green raw-file references stand out on a pale page. A small cyan marker appears beside the entry for the first onion page’s HTML. The journal identifies that marker as the link to the live onion page. After the phone is turned back toward the camera, a pale loading view gives way at about one minute and fifteen seconds to the custom title and its colored introduction. The onion hostname remains visible in the phone’s browser bar as karbytes moves down to PI_APPROXIMATION.
+
+The video then shows the square canvas and the app’s changing readouts. In a sampled view near one minute and fifty-eight seconds, the phone shows 3,577 seconds remaining, 17 red throws, six blue throws, and an estimate of about 2.95652. The canvas has only a sparse scattering of points at that stage. The much fuller Firefox still records a different stage of a run, with enough points to make the circular concentration of red visible. In the phone recording, the progression from the public directory to the onion page, followed by the changing counts on the display, is what makes the demonstration more than a view of a loaded title. It shows the Android browser receiving the page from the Linux host and executing the interactive application.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/raw_github_files_directory_MINDS_2020_SCREENSHOTS/
 
 (This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
