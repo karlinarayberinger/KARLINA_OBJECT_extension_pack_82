@@ -98,6 +98,8 @@ relevant_KARBYTES_files[43]: https://karlinarayberinger.github.io/KARBYTES_BLOG_
 
 relevant_KARBYTES_files[44]: https://karbytesforlifeblog.wordpress.com/sound_track_loop_counter_two/
 
+relevant_KARBYTES_files[45]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_28/main/sound_track_looper_two.html
+
 * * *
 
 karbytes:
@@ -3530,3 +3532,11 @@ The software listing names four files in Extension Pack 28. The application docu
 The tutorial’s assembly instructions place all four software files together so the browser can resolve the references from the HTML. It suggests opening the HTML in a browser such as Firefox. It also explains two details of publishing runnable source as text in WordPress. The angle brackets in the displayed code are escaped in the WordPress markup so readers can see the tags. In the displayed script tag, a zero-width space separates the first two letters of src. The tutorial tells readers who copy that code to remove the inserted character. One instruction line spells the script filename with a capital T in Two. The linked source file and the HTML’s script reference both use the lowercase spelling sound_track_looper_two.js.
 
 The source shown in the tutorial constructs its media locations using a folder on a Tor onion service. The live GitHub Pages edition linked from the tutorial loads its MP3s from raw files in the public GitHub repository for KARBYTES Blog Apps. I checked the linked source and the deployed script to distinguish those configurations. The three screenshots provide the playback example described above. The tutorial’s HTML and JavaScript source headers are dated January 26, 2025, the two shared stylesheets are dated July 10, 2023, and the JavaScript served by the live edition is dated April 4, 2025. The tutorial gives July 12, 2025, as its last update and marks the published material as public domain.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_28/main/sound_track_looper_two.html
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
