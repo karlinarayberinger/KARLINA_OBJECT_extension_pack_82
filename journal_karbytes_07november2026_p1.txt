@@ -6,9 +6,13 @@
  * license: PUBLIC_DOMAIN
  */
 
+~ ~ ~
+
 // ChatGPT 6.1 Sol Work Mode Prompts which karbytes has been using...
 
-PROMPT_0: Non-Video File Analysis and Documentation
+~ ~ ~
+
+// PROMPT_0: Non-Video File Analysis and Documentation
 
 [preformatted_text]
 
@@ -24,7 +28,7 @@ Carefully examine and describe the resource in maximal detail followed by your o
 
 * * *
 
-PROMPT_1: Video File Analysis and Documentation
+// PROMPT_1: Video File Analysis and Documentation
 
 [preformatted_text]
 
@@ -44,7 +48,7 @@ Carefully examine and describe the resource in maximal detail followed by your o
 
 * * *
 
-PROMPT_2: karbytes authorship of KARBYTES files and autobiographical documentation via KARBYTES files "connector" logic
+// PROMPT_2: karbytes authorship of KARBYTES files and autobiographical documentation via KARBYTES files "connector" logic
 
 [preformatted_text]
 
@@ -56,7 +60,7 @@ I would like to inform you of the fact that I (i.e. karbytes of KARBYTES) am the
 
 * * *
 
-PROMPT_3: karbytes authorship of KARBYTES files and autobiographical documentation via KARBYTES files "connector" logic
+// PROMPT_3: karbytes authorship of KARBYTES files and autobiographical documentation via KARBYTES files "connector" logic
 
 [preformatted_text]
 
@@ -65,3 +69,9 @@ Just checking in...
 From my current vantage it is within five minutes of [time_of_day] Pacific Standard Time on [day_of_year] and I am localized to The Burrow in my usual floor-bound, prone, and cocoon-encased position in front of my laptop computer.
 
 [end preformatted_text]
+
+* * *
+
+// Relevant Web Pages
+
+relevant_KARBYTES_files[0]: 
