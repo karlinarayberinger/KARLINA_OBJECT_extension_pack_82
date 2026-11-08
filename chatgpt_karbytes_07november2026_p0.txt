@@ -32,7 +32,9 @@ relevant_KARBYTES_files[10]: https://karbytesforlifeblog.wordpress.com/chatgpt_k
 
 relevant_KARBYTES_files[11]: https://karbytesforlifeblog.wordpress.com/karbytes_unique_identity/
 
-relevant_KARBYTES_files[11]: https://karbytesforlifeblog.wordpress.com/karbytes_full_genome/
+relevant_KARBYTES_files[12]: https://karbytesforlifeblog.wordpress.com/karbytes_full_genome/
+
+relevant_KARBYTES_files[13]: https://karbytesforlifeblog.wordpress.com/micro_directory_definition/
 
 relevant_KARBYTES_files[x]: https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/unlisted_web_page_chatgpt_karbytes_29october2026_a1.html
 
@@ -1113,3 +1115,13 @@ The directory screenshot makes me think about another distinction, between leavi
 Coming from karbytes_unique_identity, I also find the change in scale between the two pages revealing. On the identity page, complete_genome is a short label next to an account of authorship. Here the label opens onto four repositories, three procedural journals, 2,998 pieces, and an exact reconstruction check. I can see how a genomic resource might serve as one reference to a person. I can also see how much of the person’s activity is recorded in the decisions around that resource. The choice of a mate file, the decision to try another compressor, and the persistence of the directory system tell me about how this particular archive was made. Those decisions belong to the history of publication that the identity page puts beside the genome.
 
 What stays with me is the last piece. Chunk 2997 is shorter than the pieces preceding it. I can read its number as the end of a long run and its size as the remainder of a particular file. The main page compresses all of that into four short lines. The journals preserve enough detail to work back from the shorter final piece to the original compressed stream. I find myself wondering which part of the record a future reader would reach first, and how much of the rest that one surviving piece of context would let them recover.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/micro_directory_definition/
+
+Carefully examine and describe the resource in maximal detail followed by your own maximally detailed and maximally open-ended first person subjective commentary. Also provide EXIF data (if available).
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
