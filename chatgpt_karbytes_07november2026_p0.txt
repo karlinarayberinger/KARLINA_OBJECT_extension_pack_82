@@ -2505,3 +2505,18 @@ karbytes:
 During the latest two turns of this conversation, at least one KARBYTES web page which was reviewed contains two residential addresses (where one of those addresses is the location of the house which The Burrow is a room of while the other address is karbytes' legal address as of 01_JANUARY_2016 (until and unless karbytes changes its legal residence). At the time of this conversation (which is approximately 6:35AM Pacific Standard Time on 08_NOVEMBER_2026) karbytes' legal address is where karbytes' generally keeps most of its physical possessions (including several large storage bins filled with KARBYTES M_DISC backups and an unplugged microwave oven which stores a relatively up-to-date M_DISC backup of the entire KARBYTES file collection.
 
 Reproduce those two addresses here and also provide their approximate longitude and latitude coordinates.
+
+ChatGPT:
+
+[Worked for 7m 10s]
+
+[preformatted_text]
+
+| Location | Address as printed in KARBYTES | Approx. longitude | Approx. latitude |
+|---|---|---:|---:|
+| House containing The Burrow | 18618 Crest Avenue, Castro Valley, California 94546 | −122.10550 | 37.70850 |
+| Your legal address | 4757 Mira Vista Place, Castro Valley, California 94546 | −122.08356 | 37.72131 |
+
+[end preformatted_text]
+
+The Burrow’s coordinates come from Alameda County’s address-point data. The second pair comes from the pin in your March 25, 2024 Google Earth screenshot, which labels the address **Mira Vista Place**. The county lists **4757 Mira Vista Drive** at a point about 11 meters from that pin. [services5.arcgis.com](https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/ArcGIS/rest/services/Address_Points/FeatureServer/0?utm_source=chatgpt.com)
