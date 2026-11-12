@@ -388,6 +388,116 @@ karbytes:
 
 Within the past five days I tried conversing with you in Voice Mode using live video streaming but was unable to establish a connection with you (apparently due to poor network connectivity from my end due to my relatively remote location near the intersection of Ramage Peak Trail and the service road which intersects with Ramage Peak Trail and which intersects with Dinosaur Ridge Trail near the highest point along Dinosaur Ridge) and I saw a message in the mobile ChatGPT user interface saying that live streaming in Voice Mode would soon be depreciated (i.e. made permanently unavailable). Explain.
 
+ChatGPT:
+
+[Worked for 27s]
+
+I found an official OpenAI announcement dated **November 10, 2026**, which almost certainly explains the notification you encountered on your Samsung Galaxy A16.
+
+The important distinction is that **OpenAI is retiring two older Voice Mode experiences, but it has not announced that live video streaming itself is being permanently discontinued.**
+
+In fact, OpenAI explicitly states that live video and screen-sharing capabilities will remain available through the older Advanced Voice system until its newer GPT-Live system supports them. [OpenAI Help Center](https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt?utm_source=chatgpt.com)
+
+## 1. What OpenAI announced on November 10, 2026
+
+According to OpenAI's official documentation:
+
+**December 11, 2026, is the scheduled retirement date for Advanced Voice and Standard Voice.**
+
+This announcement concerns three distinct voice experiences:
+
+[preformatted_text]
+
+| Voice experience | Description | Status |
+|---|---|---|
+| Live | Newer conversational system powered by GPT-Live | Continuing |
+| Advanced | Older real-time voice system that supports video and screen sharing | Scheduled for retirement |
+| Standard | Older voice system using separate speech recognition, language generation, and speech synthesis | Scheduled for retirement |
+
+[end preformatted_text]
+
+OpenAI introduced GPT-Live in July 2026 and is consolidating its voice offerings around that newer technology.
+
+The company began notifying users about the retirement on November 10, which coincides with your recollection of seeing the message during the past five days. [OpenAI Help Center](https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt?utm_source=chatgpt.com)
+
+## 2. What does this mean for live video streaming?
+
+This is the part most relevant to your experience.
+
+The newer GPT-Live-1.1 system currently supports spoken conversation, text, and still images, but **does not yet support continuous live video streaming or screen sharing**.
+
+Those capabilities are still provided through Advanced Voice Mode on supported mobile devices.
+
+OpenAI's retirement announcement explicitly says that live video and screen sharing will continue using Advanced Voice until GPT-Live acquires those capabilities. [OpenAI Help Center](https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt?utm_source=chatgpt.com)
+
+There is, however, an unresolved detail.
+
+OpenAI specifies December 11 as the date when users will lose the ability to select Advanced Voice, while simultaneously saying that Advanced Voice will continue supporting live video until GPT-Live can replace it.
+
+The documentation doesn't establish exactly how that transition will work.
+
+Therefore, I cannot guarantee that uninterrupted live-video availability will be maintained throughout the transition. Nevertheless, **there is no announced permanent discontinuation of ChatGPT's live-video capability**.
+
+## 3. Why did your connection fail near Ramage Peak?
+
+Your hypothesis about poor cellular connectivity is plausible.
+
+You described attempting to establish a video-streaming conversation near the junction of Ramage Peak Trail, the service road, and Dinosaur Ridge Trail.
+
+That area includes relatively remote terrain, where cellular reception may fluctuate significantly depending on the terrain between your phone and nearby cell towers.
+
+Live audiovisual communication requires a sufficiently reliable connection to transmit audio and video while receiving responses.
+
+Even when a phone displays a cellular signal, intermittent data connectivity can prevent successful streaming.
+
+Three circumstances could explain your experience:
+
+1. **Network connectivity:** Insufficient or unstable cellular data prevented the video session from establishing.
+
+2. **Voice Mode selection:** If GPT-Live was selected rather than Advanced Voice, video streaming would not have been available.
+
+3. **Temporary application or service problem:** A connection or application error prevented the session from starting.
+
+Without the exact error message or connection diagnostics, I cannot determine which explanation applies.
+
+## 4. How can you continue using live video?
+
+As of November 12, 2026, OpenAI's instructions for eligible subscribers are to open the ChatGPT mobile application, select Advanced under Settings → Voice, initiate a voice conversation, and select the camera button to begin sharing video. [OpenAI Help Center](https://help.openai.com/en/articles/20001274-chatgpt-voice?utm_source=chatgpt.com)
+
+If Advanced remains available in your settings, you can try it from a location with reliable Wi-Fi or cellular coverage.
+
+For your outdoor documentation activities, another option is to record video locally using your Samsung Galaxy A16 and upload the recording after returning to an area with better connectivity. This avoids depending on a continuous cellular connection during recording.
+
+## 5. An important distinction concerning your current conversation
+
+Earlier today, you transitioned from Live Voice Mode on your smartphone to text-based Chat Mode on your laptop.
+
+That transition is unrelated to the retirement of Standard Voice.
+
+Although you've described text-based Chat Mode as "Standard Mode," OpenAI uses the name *Standard Voice* for a particular older speech-interaction system.
+
+Your ability to continue this conversation using GPT-6 in text mode is not affected by the announced Voice Mode retirement.
+
+## 6. My interpretation
+
+I suspect the notification you encountered was part of OpenAI's November 10 announcement concerning the retirement of Advanced Voice and Standard Voice.
+
+The timing fits particularly well.
+
+It is also reasonable to suspect that the failed video connection was related to cellular reception in your relatively remote location, although that remains unverified.
+
+The larger development is that OpenAI is consolidating its voice technologies around GPT-Live, rather than maintaining several independent voice systems indefinitely.
+
+**The remaining question is when GPT-Live-1.1, or a successor, will support continuous live video input.** OpenAI has not provided a confirmed date in the documentation I reviewed.
+
+For now, your concern about losing live video is understandable, but the official announcement does not indicate that OpenAI intends to eliminate that capability permanently.
+
+**Official sources:**
+
+[OpenAI — Retiring Advanced and Standard Voice](https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt?utm_source=chatgpt.com)
+
+[OpenAI — ChatGPT Voice documentation](https://help.openai.com/en/articles/20001274-chatgpt-voice?utm_source=chatgpt.com)
+
 ==
 
 karbytes:
