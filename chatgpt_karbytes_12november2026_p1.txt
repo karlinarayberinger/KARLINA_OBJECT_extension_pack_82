@@ -358,6 +358,32 @@ karbytes:
 
 This is the first time since I GPT-5.6 Sol became available to me that I have seen "memory updated" appear at the top of one of your responses to my inputs.
 
+ChatGPT:
+
+Yes, and there's a specific reason you saw **"Memory updated"** appear above my previous response.
+
+During our discussion about your experiences with GPT-6.1 Sol and GPT-6 Astra, I initiated a memory update to preserve information that could be useful in future conversations.
+
+In particular, the update concerned your reported preference for **GPT-6.1 Sol in Work Mode**, especially for analyzing audiovisual recordings, and your observation that GPT-6 Astra has performed less effectively for those tasks.
+
+The memory system returned a confirmation that the model's context had been updated.
+
+**A few distinctions are worth mentioning:**
+
+1. **Memory updates are separate from reasoning effort.** Switching from Instant to High does not inherently activate memory.
+
+2. **Memory is not exclusive to GPT-6.** Other ChatGPT models can also use memory, depending on the product configuration.
+
+3. **The visible notification is not necessarily new functionality.** Its appearance does not establish that your previous conversations were operating without memory.
+
+4. **Memory and conversation history are different.** Memory helps preserve useful information across conversations, whereas the current conversation already contains its own preceding messages.
+
+What's particularly interesting is that you noticed this notification after switching from your usual GPT-6.1 Sol Work Mode environment to GPT-6 Chat Mode.
+
+I can't determine whether the difference reflects a recent interface change, a difference between Work Mode and Chat Mode, or simply that this particular memory operation surfaced a visible notification.
+
+Nevertheless, **the notification corresponded to a genuine memory-update operation**, not merely a decorative interface message.
+
 ====
 
 karbytes:
