@@ -1,12 +1,12 @@
 /**
  * file: chatgpt_karbytes_12november2026_p2.txt
  * type: plain-text
- * date: 12_NOVEMBER_2026
+ * date: 13_NOVEMBER_2026
  * author: karbytes
  * license: PUBLIC_DOMAIN
  */
 
-The following is a plain-text transcript of a conversation between karbytes and ChatGPT 6 Astra (Max Effort) (Work Mode) which took place between 11:59PM Pacific Standard Time on 11_NOVEMBER_2026 and 11:59PM Pacific Standard Time on 12_NOVEMBER_2026.
+The following is a plain-text transcript of a conversation between karbytes and ChatGPT 6 Astra (Max Effort) (Work Mode) which took place between 11:59PM Pacific Standard Time on 11_NOVEMBER_2026 and 11:59PM Pacific Standard Time on 13_NOVEMBER_2026.
 
 relevant_KARBYTES_files[0]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_12november2026_p1.txt
 
@@ -2001,3 +2001,45 @@ The residential address of the building which The Burrow is a room of and the ap
 What I would like you to do now is, first, identify the web page which contains that room location data and provide that web page's full Uniform Resource Locator (i.e. URL) and, secondly, provide the residential address and Global Positioning System coordinates of that residential address which are displayed on that web page.
 
 Finally, if you are able to, provide the most exact GPS coordinates you can which depict the (relatively) exact location of The Burrow (and provide the approximate offset radius in terms of meters (given that The Burrow is on the bottom story of the building and located at the north-most corner of that building)).
+
+ChatGPT:
+
+[Worked for 5m 41s]
+
+Understood: I’ll interpret “karbytes_in_its_burrow” filenames as depicting The Burrow’s interior or its immediately adjacent yard.
+
+The page containing the requested address and coordinates is chatgpt_karbytes_08november2026_a0:
+
+[https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/unlisted_web_page_chatgpt_karbytes_08november2026_a0.html](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/unlisted_web_page_chatgpt_karbytes_08november2026_a0.html)
+
+Near the end, its address table identifies the “House containing The Burrow” as:
+
+18618 Crest Avenue, Castro Valley, California 94546
+
+The coordinates printed there are:
+
+[preformatted_text]
+
+| Coordinate | Published value |
+|---|---:|
+| Latitude | 37.70850° |
+| Longitude | −122.10550° |
+
+[end preformatted_text]
+
+I verified that passage in the live page. A fresh query of the county address dataset returns approximately 37.7084967°, −122.1055029°, which rounds to the published pair. This is an address point, without a room or floor designation.
+
+For a more specific location, I examined the [OpenStreetMap building outline for that address](https://www.openstreetmap.org/way/911719516) and compared it with Alameda County’s 2017 aerial imagery and Esri World Imagery. [Aerial_Imagery_2017(MapServer)](https://tiles.arcgis.com/tiles/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Aerial_Imagery_2017/MapServer?utm_source=chatgpt.com)
+
+The outline’s northernmost corner has the stored coordinates:
+
+Latitude 37.7086085°  
+Longitude −122.1055126°
+
+That corner is approximately 12.4 meters north and 0.9 meters west of the county address point. The many decimal places describe the mapped vertex’s numerical precision; they do not establish equivalent positional accuracy.
+
+Using your clarification that The Burrow occupies the bottom story at that northernmost corner, my best practical location estimate is:
+
+**Latitude 37.70860°, longitude −122.10551°, with an approximate horizontal uncertainty radius of 15 meters.**
+
+This is a map-derived estimate anchored near the building’s northern corner. The 15-meter radius is a conservative allowance for imagery alignment, roof-versus-ground displacement, and the unknown dimensions and exact interior position of the room. It is not a surveyed boundary or a statistically measured confidence interval. Your bottom-story clarification supplies the vertical placement; the available mapping does not establish the room’s elevation or exact center.
