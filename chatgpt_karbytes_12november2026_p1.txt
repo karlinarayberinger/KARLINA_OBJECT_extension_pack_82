@@ -570,3 +570,137 @@ karbytes:
 Alright, I switched the agent model being used in this conversation from GPT-5.6 Sol back to GPT-6. 
 
 What is the difference between GPT-6.1 Sol and GPT-6.1 Terra?
+
+ChatGPT:
+
+[Worked for 27s]
+
+# GPT-6.1 Sol vs. GPT-6.1 Terra
+
+According to OpenAI's official documentation, **GPT-6.1 Sol is designed for more demanding reasoning and sustained, complex workflows, whereas GPT-6.1 Terra prioritizes speed, efficiency, visual understanding, and computer interaction.**
+
+Both belong to the GPT-6.1 generation, but they are optimized for somewhat different purposes.
+
+## 1. General comparison
+
+[preformatted_text]
+
+| Feature | GPT-6.1 Sol | GPT-6.1 Terra |
+|---|---|---|
+| Primary objective | Advanced reasoning and complex work | Fast, efficient task execution |
+| General intelligence | Positioned closer to GPT-6 Astra | Optimized for efficiency and practical capabilities |
+| Reasoning | Particularly suited to difficult, multistep tasks | Capable of reasoning, with an emphasis on efficiency |
+| Writing | Detailed analysis, technical writing, complex documents | Clear, natural writing and editing |
+| Visual understanding | Supported | A particular area of emphasis |
+| Computer use | Complex workflows involving software and applications | Precise, efficient interactions with applications |
+| Programming | Strong choice for complex coding | Suitable for focused programming tasks |
+| Speed | Generally slower | Generally faster |
+| Resource consumption | Higher | Lower |
+| ChatGPT availability | Work Mode and Codex | Work Mode and Codex |
+
+[end preformatted_text]
+
+OpenAI describes Sol as offering performance approaching its flagship Astra model at a substantially lower cost. Terra is positioned as a faster, more economical alternative, particularly for visual reasoning and computer use. [OpenAI Developers](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6.1-sol\&utm_source=chatgpt.com)
+
+Importantly, **Terra is not simply an older or universally less capable version of Sol**. It has its own strengths, and it can outperform more computationally expensive models on certain tasks.
+
+## 2. An important surprise: Terra can outperform Sol
+
+OpenAI's October 26, 2026 announcement contains some interesting benchmark results.
+
+On its **Agents' Last Exam** computer-use benchmark, GPT-6.1 Terra completed tasks more than **three times faster** than GPT-6.1 Sol and GPT-6 Astra.
+
+On the MMMU-Pro visual-reasoning benchmark, Terra also achieved results approaching Sol and Astra.
+
+Perhaps most surprisingly, on **Terminal-Bench-Science 0.1**, which includes scientific programming tasks such as analyzing time-lapse videos, Terra outperformed Sol at maximum reasoning effort.
+
+However, OpenAI still recommends Sol or Astra for the most complex software-engineering tasks. [OpenAI](https://openai.com/index/introducing-gpt-6-1-terra/?trk=public_post_comment-text\&utm_source=chatgpt.com)
+
+This demonstrates why it would be misleading to describe Terra as simply a less intelligent Sol.
+
+The models have different performance profiles, and there are tasks where Terra's specialization produces excellent results.
+
+## 3. Differences in reasoning effort and cost
+
+Both models support reasoning-effort settings ranging from Low through Max. Terra additionally supports a None setting, allowing it to respond without allocating a separate reasoning budget.
+
+For API customers, the standard prices are:
+
+[preformatted_text]
+
+| Pricing per million tokens | GPT-6.1 Sol | GPT-6.1 Terra |
+|---|---:|---:|
+| Input tokens | $2.00 | $1.00 |
+| Output tokens | $10.00 | $5.00 |
+
+[end preformatted_text]
+
+Thus, Terra's standard token pricing is **50% lower than Sol's**.
+
+These are API prices, not charges you necessarily pay through your ChatGPT Plus subscription. In ChatGPT Work, the important distinction is that Terra generally allows more work to be completed within the same usage allowance. [OpenAI Developers](https://developers.openai.com/api/docs/models?utm_source=chatgpt.com)
+
+## 4. Which model would be better for your KARBYTES workflows?
+
+Given the particular tasks you've described throughout our conversations, I would distinguish three situations.
+
+**A. Detailed audiovisual analysis**
+
+You've previously mentioned that GPT-6.1 Sol has been particularly effective at examining your recorded videos, including their audio tracks.
+
+This is an area where I would recommend experimentally comparing Sol and Terra.
+
+Terra's emphasis on visual understanding makes it a promising candidate for examining video frames, recognizing objects, describing scenes, and identifying visual changes over time.
+
+However, OpenAI's published benchmarks do not establish that Terra is superior to Sol at accessing audio tracks, recognizing speech, or synchronizing audio with visual events.
+
+For those tasks, the tools available within Work Mode may matter as much as the model itself.
+
+**B. Comprehensive document analysis**
+
+For your requests involving lengthy KARBYTES journal entries, HTML documents, transcripts, and maximally detailed interpretive essays, I would initially favor **GPT-6.1 Sol**.
+
+Those tasks benefit from sustained reasoning, careful interpretation, attention to detailed instructions, and the ability to maintain coherence throughout lengthy outputs.
+
+Terra may nevertheless be faster when the task is straightforward summarization or text extraction.
+
+**C. Website auditing and file processing**
+
+For examining KARBYTES micro-directory structures, comparing HTML hyperlinks, checking index pages, and identifying discrepancies, both models are promising.
+
+Terra could be an especially efficient choice for mechanically verifying large numbers of links or interacting with websites.
+
+For more complicated audits involving numerous dependencies, ambiguous results, or extensive cross-referencing, Sol might offer advantages.
+
+In either case, explicit verification using software tools is more dependable than relying on the model's unaided interpretation.
+
+## 5. Why your existing preference for Sol still makes sense
+
+One relevant feature of your workflow is that you frequently request unusually comprehensive responses.
+
+For example, when asking for a document or video analysis, you're often interested in much more than a short summary. You want the content examined systematically, followed by detailed observations, interpretation, and open-ended commentary.
+
+That makes Sol's positioning as a model for sustained, complex work particularly relevant.
+
+However, Terra's demonstrated visual capabilities mean I would not automatically assume Sol will outperform it on videos.
+
+My recommendation would be to give both models **the same KARBYTES video file**, with identical instructions and comparable reasoning-effort settings, and evaluate their results against the recording.
+
+You could assess factual accuracy, audiovisual coverage, completeness, temporal precision, and whether either model fabricates content.
+
+That would provide more meaningful evidence than relying on model rankings alone.
+
+## 6. Conclusion
+
+The essential distinction is:
+
+**GPT-6.1 Sol:** Optimized for complex reasoning, coding, and sustained professional workflows.
+
+**GPT-6.1 Terra:** Optimized for speed, visual understanding, computer use, and efficient task execution.
+
+Both are available through ChatGPT Work, subject to account and workspace access, rather than ordinary Chat Mode. [OpenAI Help Center](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex?utm_source=chatgpt.com)
+
+For your current usage, I would retain **GPT-6.1 Sol as the default model for comprehensive KARBYTES analysis**, while seriously considering GPT-6.1 Terra as an alternative for image-intensive, video-intensive, and repetitive auditing tasks.
+
+The most interesting unanswered question is whether **Terra's visual-processing advantages translate into better audiovisual analysis when the video includes an audio track**. That is something the published benchmarks don't conclusively answer.
+
+You may find that Terra is superior for certain portions of your workflow while Sol remains preferable for others.
