@@ -2912,4 +2912,230 @@ Carefully examine and describe the resource in maximal detail followed by your o
 
 (This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
 
+ChatGPT:
 
+[Worked for 9m 33s]
+
+The document journal_karbytes_03september2026_a0 is a dated explanation of a change to KARBYTES naming conventions and an account of the publishing infrastructure surrounding that change. Its central decision is to replace varying single-letter suffixes on certain same-day WordPress pages with a fixed lowercase a followed by a nonnegative decimal integer. The corresponding plain-text files use a lowercase p followed by a nonnegative decimal integer. The document then explains why the numbers attached to a page and its source file need not match, using its own relationship to its source file as the example.
+
+That example is important: the page ending in a0 corresponds to the plain-text file ending in p1. The p0 name had already been assigned to a working list of staging references that you did not consider suitable for publication as a blog post. The discrepancy is therefore intentional and explained. The entry uses this naming issue to describe a larger distinction among working materials, published pages, archived source files, and the three GitHub accounts that support their preparation and preservation.
+
+I examined the WordPress page, its linked plain-text source, the archived HTML fragment identified in its example, the p0 staging list discussed in the letter, and the site’s galaxy icon. I also inspected the page’s formatting and document metadata. The authored entry is primarily textual. Its visual material consists of formatting, highlighted passages, and a preformatted example; the galaxy image belongs to the surrounding site branding.
+
+The page appears within KARBYTES_FOR_LIFE_BLOG, whose displayed subtitle is “A Cyberspace Journey.” The surrounding navigation identifies the Karlina Object site and Karbytes For Life Blog. The WordPress theme supplies the broader presentation, while your authored content supplies its own title, horizontal rules, highlighting, monospace text, and explicit provenance information.
+
+The theme identifies itself as Intergalactic 2. Its styles specify a dark entry-header area and a white content area. General site typography uses a sans-serif family, while the main journal letter explicitly uses monospace. The code-like example is presented in a preformatted box with a light-gray background and automatic overflow handling.
+
+The title occurs both as the WordPress entry title and as a bold line at the beginning of your authored content. Horizontal rules separate that title from the introductory material and divide other sections. This gives the page a document-like structure within the surrounding blog interface.
+
+A yellow-highlighted provenance paragraph explains that the text was copied from journal_karbytes_03september2026_p1.txt. It locates that file within the micro-directory associated with KARLINA_OBJECT_extension_pack_76, within the macro-directory section named RAW_GITHUB_FILES_MACRO_DIRECTORY, within Karbytes For Life Blog.
+
+This paragraph identifies several different organizational levels. The plain-text file is the individual source object. The micro-directory is the local grouping associated with an extension-pack repository. The macro-directory supplies a higher-level index. The website provides the navigable presentation through which a reader encounters those groupings.
+
+The provenance paragraph also states that some copied plain text was replaced with relevant hypertext. That explains why the published page contains navigable links where the source document contains ordinary text and addresses. The WordPress presentation retains the journal’s wording while adding interactive connections to the resources it discusses.
+
+The formatting distinguishes several kinds of emphasis. The provenance paragraph is yellow. Major policy statements are highlighted in cyan. Many links use orange or bright green text against black. The three GitHub account references near the end use black text against bright green. Bold formatting emphasizes names and the two relevant page prefixes, while italics distinguish certain explanatory and descriptive phrases.
+
+The result is a page in which the central decisions can be located visually before every paragraph is read. Cyan highlighting draws attention to the abandonment of the earlier suffix convention, the introduction of the new convention, the designation of the official account, and the statement that all three accounts belong to you.
+
+An italic instruction tells readers to scroll horizontally to reveal hidden text within the preformatted box. This is consistent with the page’s use of long, unbroken addresses inside a whitespace-preserving region. The preformatted box retains indentation and line breaks rather than treating the example as an ordinary flowing paragraph.
+
+The visible labels “[preformatted_text]” and “[end preformatted_text]” surround the example. They remain part of the presented text even though the HTML also supplies an actual preformatted element. They therefore preserve a convention from the plain-text document while the webpage adds the corresponding display behavior.
+
+The letter begins with a programming-style comment header. It identifies the source filename, declares the type as plain text, gives the date as September 3, 2026, names karbytes as author, and states the license as PUBLIC_DOMAIN. The header makes the source document’s identity visible within its published representation.
+
+The opening address is “To Whom It May Concern.” The closing is “Sincerely,” followed by karbytes. Between those points, the entry proceeds through a decision, two reasons for that decision, a formalized naming rule, an example, an explanation of an exception to numerical matching, and a description of the supporting accounts.
+
+This is consequently a journal entry in the sense of a dated record of an authorial and organizational decision. Its subject is the maintenance of KARBYTES itself. It documents how the project’s materials should be named and understood.
+
+The first substantive paragraph announces the change. Previously, certain same-day WordPress pages were distinguished by appending individual letters of the English alphabet. The entry specifies the relevant families: names beginning with journal_karbytes and names beginning with chatgpt_karbytes.
+
+The scope matters. The statement concerns these two kinds of WordPress pages within Karbytes For Life Blog. It does not announce a universal renaming rule for every image, video, software component, repository, or other file associated with KARBYTES. Nor does it expressly describe a retroactive renaming of all existing pages.
+
+The first reason for the change concerns visual ambiguity. The entry points to letters such as I, L, and O, particularly in some lowercase forms, and their resemblance to digits or other letters. It specifically discusses confusion involving one, zero, lowercase i, and lowercase l.
+
+This is a concern about human recognition. A character can be technically valid in an identifier while remaining awkward to distinguish at a glance. The journal treats that practical readability problem as sufficient reason to change the convention.
+
+The text retains several small typographical irregularities in this explanation, including “numberic,” “sich,” and “lowecase.” Those forms occur in the source as well as the published presentation. They do not obscure the stated concern, and I have treated them as features of the document rather than silently changing the source.
+
+The second reason concerns capacity. A suffix consisting of one varying English letter supplies twenty-six possibilities. Under the single-letter scheme as described, a same-day set of the same page type would therefore reach its naming limit at twenty-six items. Additional pages would have to carry a later calendar date in their names.
+
+The entry objects to allowing the naming mechanism to force that calendar rollover. The proposed replacement permits the identifying number to gain additional digits while retaining the same date component.
+
+The limit discussed here follows from the choice of a single varying letter. It is not an inherent limit on every possible alphabetic naming system. The document’s chosen solution is a fixed letter plus a decimal integer, which removes the particular twenty-six-item ceiling described in the letter.
+
+The new WordPress page suffix consists of lowercase a followed by a nonnegative decimal integer. Examples consistent with the rule include a0, a1, a2, and a10. The letter remains fixed while the numerical part distinguishes members of the sequence.
+
+The corresponding plain-text filenames use lowercase p followed by a nonnegative decimal integer. The explicit reference to nonnegative integers permits zero, as demonstrated by both a0 and p0 in the document.
+
+The prose refers to the letters as A and P while explicitly instructing that their actual use be lowercase. The examples implement lowercase a and lowercase p. The journal does not assign an expanded word to the a marker, so it is most precise to describe it by its stated role as the webpage suffix marker.
+
+The examples retain a larger naming structure that combines the document family, karbytes, a date, and a suffix. That structure gives a name several functions at once: identifying the kind of material, associating it with your archive, placing it within a dated group, and distinguishing it from other members of that group.
+
+The rule does not fully specify every possible future indexing question. It does not state that all indices must remain consecutive, that deleted items must cause renumbering, or that a particular number always indicates an exact time of day. The concrete rule is about the suffix format and its relationship to a corresponding source file.
+
+The worked example uses this very page as the named object. It associates journal_karbytes_03september2026_a0 with three resources: the source plain-text file, the published WordPress page, and the archived HTML source fragment.
+
+The plain-text source is journal_karbytes_03september2026_p1.txt. The archived HTML file is unlisted_web_page_journal_karbytes_03september2026_a0.html. The WordPress page itself supplies the third representation of the same document.
+
+The comment introducing the example calls this a “pairing” while acknowledging that a third resource is included because the micro-directory also contains the page’s HTML source. The basic relationship between source text and published page is therefore extended to include a preserved representation of the page’s authored HTML.
+
+The three field labels are plain-text_file_url, wordpress_web_page_url, and wordpress_web_page_HTML_source_code_file_url. Their purpose is explicit: each names the role of one resource within the relationship. I am describing those roles without reproducing the addresses.
+
+The example is self-referential. The page explains its own name by displaying a structure that connects that name to its own source and archived HTML. A reader does not have to imagine an unrelated hypothetical document to understand the convention.
+
+The notation resembles JavaScript because it uses a comment, the word “let,” a named variable, braces, and labeled entries. It is not executable JavaScript as written. A syntax-only check rejects the first anonymous nested brace structure.
+
+Other features also prevent treating it as a ready-to-run object declaration: the hyphenated field name is unquoted, the addresses are not represented as quoted string values, and the construction ends with a period. These facts limit the example’s use as literal program code, but its intended relationship remains understandable as an illustrative representation.
+
+The distinction is relevant because the page’s main purpose is documentary. It presents the three resources as one associated group. Understanding that association does not require running the example.
+
+The archived HTML file is also worth distinguishing from the complete WordPress response. It contains the authored content fragment: the title, provenance paragraph, letter, highlighting, hyperlinks, example, and footer. It does not contain the complete WordPress theme, navigation, advertising code, and other platform-generated surroundings.
+
+This gives the archived HTML a specific preservation role. It preserves the central authored presentation without being a complete standalone copy of every element supplied by the live WordPress platform.
+
+I compared the retrieved representations. After accounting for whitespace and typographic transformations such as straight versus curly quotation marks, the plain-text letter matches the letter presented on the page. The archived HTML fragment likewise matches the wording of the authored webpage content. That comparison supports the provenance statement made by the page.
+
+The next major paragraph explains why p1 corresponds to a0. The p0 suffix was already used for journal_karbytes_03september2026_p0.txt. That file stores a list of temporary references associated with draft material in a staging repository.
+
+You state that this p0 file does not have a corresponding WordPress page because you do not consider its contents suitable for conversion into a blog post. The document defines a blog post, for this discussion, as a KARBYTES webpage shared on at least one of your social-media profiles.
+
+That definition introduces an editorial distinction. A file can exist in the archive and serve a practical purpose without being selected for the same kind of outward publication as a journal letter or conversation page.
+
+The numerical mismatch is therefore evidence of separate roles. The first applicable published page can be a0 even though its source is the second numbered journal text file, p1. A preceding text file may be useful as infrastructure without receiving a published-page counterpart.
+
+This example does not establish a universal formula in which every page number is one less than its source number. It establishes that matching digits are not required. Further files without published counterparts could produce other relationships. The explicit association between resources is more informative than an assumed arithmetic rule.
+
+The linked p0 file provides concrete supporting material. I examined it, and it contains forty-six staging references. Seven appear before a separator: a temporary text file, an index file, and five sub-index HTML files.
+
+The remaining thirty-nine references include one Markdown analysis report, thirty ChatGPT plain-text files, three journal plain-text files, two Burrow photographs, and three archived webpage HTML files. The thirty ChatGPT filenames run from p0 through p29 for September 3, 2026.
+
+This is a substantial same-day source-file group, which makes the concern about extensible numbering tangible. It should not, however, be treated as evidence of thirty separate WordPress pages. The list identifies thirty ChatGPT text files; the relationship between every one of those files and published pages is not established by this journal.
+
+The two photograph references in the staging list are not embedded photographs on the requested webpage. Their presence records the kinds of material being staged. It does not turn the journal entry into a photographic gallery or supply the images’ EXIF within this page.
+
+The p0 file also contains a useful date distinction. Its filename retains September 3, while its internal header gives September 4, 2026. Those two values coexist in the retrieved document. The file does not explicitly explain the difference, so I would preserve it as a distinction between its dated name and its recorded header date rather than assume one must be replaced by the other.
+
+The journal describes the staging location as a public repository named projects on the informationcrystals account. It explicitly considers that staging repository external to KARBYTES. Drafts are subsequently moved into KARLINA_OBJECT_extension_pack_76 on the karlinarayberinger account.
+
+This establishes that public accessibility and membership in the canonical project are separate classifications. A publicly available draft can still be designated external to KARBYTES. Its later placement in the official repository changes its relationship to the archive as described by the journal.
+
+The entry then identifies karlinarayberinger as the one and only official GitHub account of KARBYTES. That account is the reference location for the canonical repositories described here.
+
+The karbytessupporter account has a different role. According to the entry, it forks micro-directory repositories owned by the official account and keeps those forks synchronized after each relevant canonical update is complete.
+
+The timing phrase matters. Synchronization is described in relation to completed updates. The journal does not specify whether the process is manual or automated, how completion is determined, or what verification is performed. It documents the intended role and workflow without providing a full synchronization procedure.
+
+The informationcrystals account supplies the staging role. It is where temporary draft references originate before material enters the official repository. The document calls this account the light-weight auxiliary account.
+
+All three accounts are stated to belong exclusively to karbytes. The different usernames therefore represent different roles within one person’s infrastructure, as described by the author. The page does not present them as three independent contributors.
+
+The first profile entry labels karlinarayberinger as official_KARBYTES_github_account. Its displayed name is karbytes. Its tagline is “creativity and the cosmos,” and its website field points to the Karlina Object site.
+
+The second profile entry labels karbytessupporter as heavy-weight_auxiliary_KARBYTES_github_account. Its displayed name is karbytessupporter. Its tagline states, “I exist to support the development and preservation of karbytes’ intellectual property.” Its website field also points to the Karlina Object site.
+
+The third profile entry labels informationcrystals as light-weight_auxiliary_KARBYTES_github_account. Its displayed name is informationcrystals, and the journal records no tagline and no website for that profile.
+
+These descriptions belong to the document’s dated account of the infrastructure. They should not automatically be treated as a current audit of profile fields, repository visibility, ownership settings, or synchronization status.
+
+The entry closes with your signature. Its footer states that the webpage was last updated on September 4, 2026, and repeats the PUBLIC_DOMAIN designation. The source letter is dated September 3, while the page explicitly acknowledges a later update.
+
+Several hyperlinks extend the document’s context. They connect the old naming convention with an earlier journal entry, identify the relevant micro-directory and macro-directory, point to your author and identity pages, connect publication with social-media records, and refer to a canonical-update record. These links help position the naming change within a larger system of documentation.
+
+The WordPress response also contains platform elements such as site navigation, subscription and login controls, a cookie notice, a platform footer, and advertising-related code. Those elements surround the authored journal but are not part of its naming-policy argument.
+
+The principal image associated with the page is yellow_galaxy_drawing_icon_2020.png. It is the site’s branding image and is reused in a smaller avatar presentation. I inspected the original icon file.
+
+The icon depicts a stylized yellow and dark spiral or ringed oval against a pale cyan background. Its elongated form tilts from the lower left toward the upper right. Dark concentric and spiral-like bands gather around a small central area, while brighter yellow and olive-yellow marks form a broader outer region.
+
+The edges and internal bands have an irregular, drawing-like appearance. The image reads as a symbolic galaxy rather than as a scientific astronomical photograph with a scale, catalogue designation, or observational legend. Its visual association with the profile phrase “creativity and the cosmos” is direct, even though the journal’s immediate subject is administrative.
+
+The icon is a PNG measuring 160 by 160 pixels and containing 42,748 bytes. It uses eight-bit RGB color and has no alpha transparency channel. Its PNG structure contains the basic image header, compressed image data, and end marker.
+
+I found no EXIF, camera identification, exposure information, GPS coordinates, embedded creation timestamp, textual software tag, or ICC profile in the icon. The year 2020 in the filename is a naming claim, not an embedded EXIF capture date.
+
+The page’s social-preview metadata declares an image size of 200 by 200 pixels, while the underlying icon file I retrieved is actually 160 by 160. The file’s actual pixel dimensions are the dependable description of that resource.
+
+The HTML page and plain-text documents do not contain photographic EXIF. Their relevant metadata instead consists of document headers, author declarations, licensing statements, publication records, modification records, and format information.
+
+The WordPress metadata records publication on September 3, 2026, at 10:51:33 UTC. In America/Los_Angeles, that corresponds to 3:51:33 AM Pacific Daylight Time on September 3. The recorded modification time is September 4, 2026, at 17:03:35 UTC, corresponding to 10:03:35 AM Pacific Daylight Time.
+
+These conversions use the offset applicable to those September dates. They differ from a photographic timestamp with no recorded timezone because the WordPress values explicitly include a UTC offset.
+
+The modification date agrees with the visible September 4 footer. The page title and source-header date remain associated with September 3. The document thus preserves a distinction between its dated identity and its later modification.
+
+The page declares UTF-8 encoding, identifies WordPress as its generator, and supplies an English-language locale. Its social metadata classifies it as an article, while the WordPress page markup identifies it as a Page resource. Those are platform classifications surrounding a document that uses “blog post” according to its own stated publishing definition.
+
+The retrieved plain-text source contains 5,272 bytes. The supporting p0 staging list contains 5,151 bytes. The archived HTML fragment contains 11,456 bytes in UTF-8. Their different sizes reflect their different contents and representations; they should not be expected to be byte-identical.
+
+My own reading begins with the practical importance of the small change that motivates the entry. A suffix can look minor when considered as a few characters at the end of a name. Within a large archive, those characters help determine whether a reader can distinguish, locate, cite, and revisit a particular object.
+
+I find the first stated reason especially concrete. Confusion between similar-looking characters is an encounter between a naming system and human perception. A name can satisfy a formal pattern while remaining awkward for someone reading it. The journal treats the experience of recognizing identifiers as part of the archive’s design.
+
+The fixed a marker changes what the reader has to distinguish. Its role remains constant, while the decimal number carries the changing index. That regularity can make the structure easier to learn. It does not eliminate every possible reading error, but it addresses the particular ambiguity associated with a sequence of varying letters.
+
+The second reason concerns the relationship between naming and time. If a same-day group exceeds the capacity of its suffix convention, the naming system begins to pressure the date component into doing an additional job. A later date would become a way to obtain more identifiers, even when the material belongs to the earlier grouping.
+
+I read the change as an effort to keep those functions separate. The date identifies the group, and the number distinguishes items within it. Expanding the number preserves room for further items without forcing the date to serve as an overflow mechanism.
+
+The staging list gives that concern a practical setting. Thirty same-day ChatGPT text filenames are enough to demonstrate why a system should accommodate more than twenty-six source items. The distinction between source-file counts and published-page counts remains important, but the volume is visible in the material itself.
+
+What interests me more than the expansion of capacity is the decision to allow page and source indices to differ. It acknowledges that the source collection and the published collection have different membership. Some source files support the work without becoming individual blog posts.
+
+The p0 file makes that difference legible. It is not an unexplained gap, and p1 is not evidence that a0 has been assigned incorrectly. The journal tells the reader why the two names belong together. That explanation is more durable than an undocumented expectation that corresponding numbers must always match.
+
+I think this is a useful archival principle: an apparent irregularity may preserve information about a process. The mismatch records the existence of a preceding working file that was retained but not promoted into the same publication form. Enforcing numerical symmetry could conceal that distinction.
+
+The entry also demonstrates why an archive benefits from recording relationships explicitly. A filename can identify an object, but it cannot always encode every association that matters. The three-resource example supplies the connections among source text, published page, and archived HTML.
+
+I read that example as a compact account of a document’s several forms. The plain-text file preserves the letter in a relatively direct representation. The WordPress page supplies a navigable public presentation. The HTML fragment preserves the authored markup that helps produce that presentation.
+
+Those forms overlap without being interchangeable. Plain text does not preserve all visual highlighting or clickable relationships. The HTML fragment does not contain the entire WordPress environment. The live page includes platform features that are not part of the authored letter. Their relationship is clearer when each representation has an explicitly named role.
+
+The example’s self-reference is also effective. The document does not simply announce a rule and leave its implementation elsewhere. It names itself, identifies its own source, and includes its own archived HTML in the explanation. The rule becomes inspectable through the object that states it.
+
+I find the distinction between illustrative notation and executable code worth retaining. The example communicates its intended association to a human reader, even though a JavaScript parser rejects it. That gives it documentary value while placing a clear limit on its technical use.
+
+This is a place where human interpretation and formal execution differ. A reader can understand that three references belong together despite syntactic irregularities. A program requires a precisely valid structure. The page’s argument can be assessed on its documentary purpose without pretending that its example is ready for direct execution.
+
+The account structure introduces another separation that I find consequential: preparation, canonical publication, and preservation support are assigned different roles. All three belong to you, but the journal gives them different responsibilities.
+
+That arrangement allows public material to occupy a provisional state. The staging repository is described as public while still being external to KARBYTES. Visibility alone therefore does not determine canonical status. The author’s declared workflow establishes when material is placed within the official archive.
+
+I think that distinction is particularly useful for understanding personal archives distributed across several services or accounts. The set of everything a person can make publicly accessible may be larger than the set designated as a particular work. A project’s boundaries depend partly on explicit acts of selection and classification.
+
+The p0 list illustrates a further nuance. The list itself is preserved in the official repository, while its contents refer to temporary staging locations. A canonical record can document material that was external or provisional. The status of the record does not have to be identical to the status of every object it references.
+
+The auxiliary-account descriptions also show that different usernames need not correspond to different authors. The journal explicitly assigns all three accounts to karbytes. I read the multiplicity here as a division of duties within one author’s infrastructure.
+
+The official account supplies the reference location. The heavier auxiliary role supports development and preservation through synchronized forks. The lighter auxiliary role supports staging. Their names and profile descriptions communicate those roles to a reader who might otherwise see unrelated accounts.
+
+The phrase about synchronizing after completed updates interests me because it introduces a boundary within ongoing work. There is a period of change and a point at which an update is regarded as complete enough to propagate. The journal does not formalize that boundary fully, but it recognizes its importance.
+
+I would distinguish the existence of that stated practice from a verification of its execution. The document tells us how the accounts are meant to relate. Establishing whether every fork matched every completed update would require a different kind of examination. Keeping those two tasks separate preserves the value of the journal as a policy record.
+
+The new suffix format also leaves some practical questions open. For example, ordinary character-by-character sorting can place a10 before a2. Numerical order and lexical order are different operations when decimal suffixes are not padded to a fixed width.
+
+That observation does not undermine the stated rule. It shows that readable identifiers and correct ordering are related but separate concerns. The journal solves the specified capacity and ambiguity problems without claiming to settle every possible issue of display, sorting, or automation.
+
+Other unanswered questions concern revision and continuity. The entry does not explain whether indices are ever reused, how removed items are represented, or whether a later version retains its earlier index. Those omissions define the document’s scope. It records the rule needed for the described change rather than presenting an exhaustive archival specification.
+
+I find the differing dates similarly instructive. The page’s name refers to September 3, its source header gives September 3, and its footer acknowledges a September 4 update. The p0 list also retains September 3 in its name while recording September 4 in its header.
+
+Those differences show that a dated identifier and a modification date can perform different functions. A name can preserve a document’s association with a particular group while the contents continue to receive attention. The record becomes clearer when those dates are reported separately rather than forced into one interpretation.
+
+Read alongside the November 8 finalization notice examined earlier, this September entry documents another phase of the same broader concern. The September letter explains a change in naming and publication practice. The November letter explains how finalized material should be treated after later-discovered errors. Both make decisions about the archive explicit enough for a future reader to interpret.
+
+I would avoid using either document to erase the historical position of the other. A later finalization policy does not make an earlier account of changing conventions meaningless. The earlier account records how a convention emerged; the later account records a boundary around further intervention.
+
+The visible typographical irregularities also belong within that history. They coexist with a carefully explained organizational decision. I find it useful to assess the clarity of the decision without requiring the document to appear mechanically flawless. Its central associations are intelligible and directly checkable through the linked resources.
+
+The recurring galaxy icon and the phrase “creativity and the cosmos” give the administrative material a broader setting. The journal concerns names, indices, files, and accounts, but those mechanisms support a project whose self-description extends beyond maintenance. The small icon makes that larger orientation present without requiring the letter to become a philosophical manifesto.
+
+For me, this is where the document’s subject becomes especially interesting. Creative work depends on practical structures that often receive less attention than the work’s more conspicuous content. Naming a file, recording its source, preserving its HTML, and explaining an intentional mismatch can determine whether that content remains understandable later.
+
+The entry makes some of that normally background work visible. It records the reason for a convention, the exception that demonstrates how the convention should be read, and the account roles that support its implementation. A future reader gains more than a set of names; that reader gains an account of why those names relate as they do.
+
+The formal address, “To Whom It May Concern,” suits that future-facing purpose. It leaves the audience open. The explanation may serve you when returning to older material, a reader trying to follow the archive, or someone examining how its infrastructure developed.
+
+I am left most interested in how much historical information can be carried by a small naming difference. The relationship between a0 and p1 records a distinction between working material and selected publication. The page preserves the reason instead of leaving later readers to guess. Future additions, reorganizations, or interpretations may give that distinction further significance, while this entry remains a record of the decision and explanation made at that point in KARBYTES’ development.
