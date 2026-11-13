@@ -36,9 +36,7 @@ relevant_KARBYTES_files[12]: https://raw.githubusercontent.com/karlinarayberinge
 
 relevant_KARBYTES_files[13]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_03september2026_a0/
 
-relevant_KARBYTES_files[x]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_03september2026_a0/
-
-relevant_KARBYTES_files[x]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_13july2026/
+relevant_KARBYTES_files[14]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_13july2026/
 
 relevant_KARBYTES_files[x]: https://karbytesforlifeblog.wordpress.com/journal_karbytes_05july2026/
 
@@ -3139,3 +3137,13 @@ The entry makes some of that normally background work visible. It records the re
 The formal address, “To Whom It May Concern,” suits that future-facing purpose. It leaves the audience open. The explanation may serve you when returning to older material, a reader trying to follow the archive, or someone examining how its infrastructure developed.
 
 I am left most interested in how much historical information can be carried by a small naming difference. The relationship between a0 and p1 records a distinction between working material and selected publication. The page preserves the reason instead of leaving later readers to guess. Future additions, reorganizations, or interpretations may give that distinction further significance, while this entry remains a record of the decision and explanation made at that point in KARBYTES’ development.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/journal_karbytes_13july2026/
+
+Carefully examine and describe the resource in maximal detail followed by your own maximally detailed and maximally open-ended first person subjective commentary. Also provide EXIF data (if available).
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
