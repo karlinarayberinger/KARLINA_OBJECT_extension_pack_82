@@ -53,3 +53,27 @@ On the following web page, verify whether or not the sub-index pages whose index
 https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/
 
 (This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 4m 55s]
+
+Sub-indexes **285–304 contain 400 of the 401 expected destinations** from the `KARLINA_OBJECT_extension_pack_82` micro-directory. All 20 sub-indexes are listed on the batch index. I compared their HTML at commit `1cfe87e`, which GitHub records as successfully deployed to Pages. Direct fetches of the published sub-index pages were unavailable. [Micro-directory](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/) · [Batch index](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/) · [Deployment record](https://github.com/karbytessupporter/karbytes_wayback_machine_saves_precision_batches_extension_1/actions/runs/43819204757)
+
+[preformatted_text]
+
+| Check | Result |
+| --- | ---: |
+| Distinct raw GitHub destinations present | 372 of 373 |
+| Destinations marked `(*)` in the micro-directory present | 28 of 28 |
+| Sub-index hyperlinks whose visible text exactly matches their full destination URL | 402 of 402 |
+
+[end preformatted_text]
+
+- **Missing.** `chatgpt_karbytes_14november2026_p1.txt` appears in the micro-directory and is absent from all 20 sub-indexes. [Expected raw URL](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_14november2026_p1.txt)
+
+- **Duplicated.** `karbytes_in_the_big_green_thing_25oct2026_p1.mp4` appears in both [sub-index 287](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_287.html) and [sub-index 298](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_298.html).
+
+- **Additional link.** Sub-index 285 also includes the micro-directory’s own GitHub Pages URL. [Sub-index 285](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_285.html)
+
+Nine pages exceed the batch index’s stated maximum of 21 links. Sub-indexes **290, 291, 293, 294, 298, 299, 300, 301, and 303** each contain 22.
