@@ -72,6 +72,8 @@ relevant_KARBYTES_files[30]: https://karbytesforlifeblog.wordpress.com/karbytes_
 
 relevant_KARBYTES_files[31]: https://karbytesforlifeblog.wordpress.com/karbytes_content_updating_rules/
 
+relevant_KARBYTES_files[32]: https://karbytesforlifeblog.wordpress.com/best_practices_for_using_the_web/
+
 relevant_KARBYTES_files[x]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_14november2026_p1.txt
 
 relevant_KARBYTES_files[x]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_13november2026_p1.txt
@@ -3531,3 +3533,13 @@ A difficult case for me is a clear new statement from the named author after an 
 I also think of the declaration in which karbytes names maintaining the public collection as something it wants to keep doing for as long as possible. That gives me a sense of the work during its open period. This rules page gives me a sense of what that work could leave behind if the open period ends. The possibilities sit together in a way I find persuasive. A person can intend to keep publishing indefinitely while preparing for future readers to encounter a completed record. The optical copies and public captures are ways to keep the result accessible, including in circumstances where the author can no longer answer the questions a reader brings to it.
 
 I end up imagining a reader who finds the collection long after its final revision, with one directory available from an archived copy, another from optical media, and the rules themselves in a short plain-text file. That reader might recover the exact wording of the policy and still have to reconstruct the order in which the surviving versions were made. The public-domain release gives the reader room to preserve those findings and share them. The two updating rules give the reader a way to ask where the author’s own revision history ends. What I would most want to recover in that situation is the relationship among the remaining records: which changes the author adopted, which copies carried those changes forward, and which surviving version shows the point where those two histories parted.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/best_practices_for_using_the_web/
+
+Carefully examine and describe the resource in maximal detail followed by your own maximally detailed and maximally open-ended first person subjective commentary. Also provide EXIF data (if available).
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
