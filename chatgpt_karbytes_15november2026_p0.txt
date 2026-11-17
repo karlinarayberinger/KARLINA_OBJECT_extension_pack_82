@@ -28,7 +28,7 @@ relevant_KARBYTES_web_page[8]: https://raw.githubusercontent.com/karlinarayberin
 
 relevant_KARBYTES_web_page[9]: https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/unlisted_web_page_chatgpt_karbytes_16november2026_a0.html
 
-relevant_KARBYTES_web_page[x]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/patreon_karbytes_16november2026_p0.png
+relevant_KARBYTES_web_page[10]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/patreon_karbytes_16november2026_p0.png
 
 relevant_KARBYTES_web_page[x]: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/patreon_karbytes_16november2026_p1.png
 
@@ -1039,3 +1039,13 @@ Finding the different start date in the linked text made the comparison turn bac
 The check-ins give the record a scale I would otherwise miss. I have seen The Burrow in the earlier footage, where the laptop, shelving, warm lights, and doorway take time to come into view. Here the same place appears in two short sentences, hours apart. The precision is of a different kind from a commit identifier or a byte comparison. Karbytes gives a time within five minutes and identifies a place and a device. The assistant answers in the same terms. Between those two moments, the evidence demands exact addresses, counts, and versions. I like that the page keeps both kinds of time. I can read the work as a series of technically specific checks and also as something someone returned to over the course of a day in a room I can picture.
 
 By the end, I was thinking about the page’s own eventual place in the archive it describes. It already has a raw source, a published form, links to related pages, and an illustration carried forward from an earlier extension pack. It records how several references became more accurate, and it contains a small discrepancy that comes into focus when I follow one of its own links. I find that combination more memorable than a clean tally alone. The page lets me see which parts of the work held up under comparison, which needed a second look, and exactly where the conversation stopped for the evening.
+
+karbytes:
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/patreon_karbytes_16november2026_p0.png
+
+Carefully examine and describe the resource in maximal detail followed by your own maximally detailed and maximally open-ended first person subjective commentary. Also provide EXIF data (if available).
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
