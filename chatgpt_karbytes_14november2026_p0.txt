@@ -97,3 +97,38 @@ Please verify that each of the three aforementioned home pages reflect these cha
 - KARBYTES_copy_of_source_code_file_of_live_home_page_1: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_0.html
 
 - KARBYTES_copy_of_source_code_file_of_live_home_page_2: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_1.html
+
+ChatGPT:
+
+[Worked for 12m 6s]
+
+All three live home pages now state a maximum of **25 KARBYTES hyperlinks per listed sub-index page**. Each live page’s HTML matches its corresponding `KARLINA_OBJECT_extension_pack_82` copy byte for byte.
+
+[preformatted_text]
+
+| Site | Sub-indexes checked | Verified HTML pair |
+| --- | ---: | --- |
+| Precision Batches | 722 | [Live home page](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/) · [Archived copy](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_index.html) |
+| Extension 0 | 151 | [Live home page](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_0/) · [Archived copy](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_0.html) |
+| Extension 1 | 316 | [Live home page](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/) · [Archived copy](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/unlisted_web_page_karbytes_wayback_machine_saves_precision_batches_extension_1.html) |
+
+[end preformatted_text]
+
+**Sub-index 304** now lists `chatgpt_karbytes_14november2026_p1.txt` once, with the full raw URL as both its visible text and destination. The destination returned HTTP 200. Sub-indexes 285–304 now cover all 373 raw-file URLs and all 28 `(*)` destinations from the micro-directory. The one repeated destination is `karbytes_in_the_big_green_thing_25oct2026_p1.mp4`, on pages 287 and 298. [Sub-index 304](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_304.html) · [Raw transcript](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_14november2026_p1.txt)
+
+**Six of the 1,189 sub-index pages exceeded 23 total hyperlinks.** Original sub-index 635 exceeded the stated maximum under the full-URL criterion, with 26 links whose visible text exactly matched their destination.
+
+[preformatted_text]
+
+| Site | Sub-index | Total hyperlinks | Links labeled with their exact destination URL |
+| --- | --- | ---: | ---: |
+| Precision Batches | [542](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/sub-index_page_542.html) | 24 | 24 |
+| Precision Batches | [634](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/sub-index_page_634.html) | 24 | 24 |
+| Precision Batches | [635](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/sub-index_page_635.html) | 26 | 26 |
+| Precision Batches | [654](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/sub-index_page_654.html) | 25 | 25 |
+| Extension 1 | [13](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_13.html) | 31 | 20 |
+| Extension 1 | [121](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_121.html) | 24 | 23 |
+
+[end preformatted_text]
+
+The original site’s sub-index 321 served 26 links on the first pass and 21 on recheck. I used the rechecked count, which matches the current repository source. [Sub-index 321](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches/sub-index_page_321.html)
