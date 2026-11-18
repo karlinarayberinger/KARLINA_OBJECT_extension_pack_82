@@ -5350,3 +5350,9 @@ The five October photographs identify a Samsung SM-A037U. Each is 4160 by 3120 p
 | October 27 p66, cooler twilight landscape | October 27 at 18:49:41 | 1/10 second | 3200 |
 
 [end preformatted_text]
+
+karbytes:
+
+In order to have you process that video (instead of the response generation timing out due to some purported "message stream error"), I switched back to using ChatGPT 6.1 instead of ChatGPT 6.2. I'll be using the older model for the remainder of this conversation in order to maximize the reliability of the response generation. In the plain-text file in KARBYTES which stores this conversation's transcript, I added the following annotation in place of duplicate input messages and server-side error messages:
+
+karbytes ran into multiple instances of "error in message stream" ChatGPT errors while using GPT-6.2 Sol to analyze MP4 files. Switching to an older and more stable model seemed to resolve the issue. karbytes decided to switch back to using GPT-6.1 Sol for this and other "in progress" ChatGPT conversations to avoid the error again. karbytes thinks it might have something to do with GPT-6.2 Sol being overly efficient in terms of token expenditure.
