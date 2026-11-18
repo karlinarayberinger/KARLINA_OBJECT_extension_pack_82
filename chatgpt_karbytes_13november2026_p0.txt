@@ -4491,6 +4491,10 @@ Your switch kept **Maximum Effort** selected. Max gives the selected model more 
 
 For your KARBYTES work, I’d expect the published gains to be most relevant when a single request combines several steps, such as retrieving an exact public file, comparing it with a saved copy, checking its metadata, and writing from the verified material. Your audio and video comparisons are a separate question. Both API model listings specify **text and image inputs and text output**. For a recording in Work, the review still depends on which tools expose the frames and audio and how much of the recording they actually process. [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6.1-sol?utm_source=chatgpt.com)
 
+karbytes:
+
+Explain the difference between GPT-6 Astra and GPT-6.2 Astra, why there seems to be no publicly-available GPT-6.1 Astra model (at least for Plus users) and also provide historical context for the newly released ChatGPT model.
+
 ===
 
 karbytes:
