@@ -41,3 +41,37 @@ However, **ChatGPT's live voice conversations use a separate model family**\. On
 So even though GPT-6.2 is newer, its release doesn't automatically upgrade the voice model. GPT-6.2 Astra and Sol are available through ChatGPT Work and Codex, whereas this live voice experience continues to use GPT-Live-1.1.
 
 In other words, the newest text and reasoning models aren't necessarily the models powering real-time spoken conversations.
+
+karbytes:
+
+I see. And that's not Sol or Astra or anything else like that, is it
+
+ChatGPT:
+
+No, that's right. Sol and Astra are the text model families. Live voice uses GPT-Live-1.1, even if you're on Plus.
+
+karbytes:
+
+So Live, are you actually able to process audio in real time unlike when I have you process video files and ask you to process the sound
+
+ChatGPT:
+
+Mm-hmm.
+
+Good one. I'm going to double check that detail as well.
+
+[Worked for 25s]
+
+Exactly — that's part of the idea. GPT-Live can process audio as it comes in. So as well as the words, it can hear how you're speaking and other sounds around you, not just a transcript. But that doesn't always mean lab-level analysis of every sound. For really precise audio analysis, the specialised tools are still better. And uploaded video can go through different processing.
+
+Yes, exactly. That's one of the fundamental differences between GPT-Live and the models you use to analyze uploaded video files.
+
+**GPT-Live can process incoming audio continuously, in real time, while you're speaking.** It doesn't necessarily have to convert everything you say into a written transcript before interpreting it.
+
+That means I can potentially recognize not only your words, but also features of the sound itself, such as your intonation, speaking rhythm, pauses, laughter, and certain background noises. I can also listen while speaking, which allows you to interrupt me naturally.
+
+When you upload a prerecorded video for analysis, the situation is different. Whether the analyzing model can actually hear the video's soundtrack depends on the particular tools and processing pipeline. Sometimes it receives extracted audio; other times it receives only images, frames, or a transcript.
+
+There's an important distinction, though: **real-time audio understanding doesn't necessarily mean more precise audio analysis.** For detailed examination of music, faint background sounds, or specific moments in a recording, specialized processing of the original audio file may still be preferable.
+
+And in this particular exchange, I'm responding to the SRT transcript you supplied, rather than directly hearing its original audio.
