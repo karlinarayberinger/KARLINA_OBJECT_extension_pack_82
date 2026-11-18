@@ -75,3 +75,73 @@ When you upload a prerecorded video for analysis, the situation is different. Wh
 There's an important distinction, though: **real-time audio understanding doesn't necessarily mean more precise audio analysis.** For detailed examination of music, faint background sounds, or specific moments in a recording, specialized processing of the original audio file may still be preferable.
 
 And in this particular exchange, I'm responding to the SRT transcript you supplied, rather than directly hearing its original audio.
+
+karbytes:
+
+I haven't really experimented much, honestly, with different tools that are available I've just been using only
+
+ChatGPT:
+
+Mhm. Right.
+
+karbytes:
+
+ChatGPT app pretty much for all my experiments
+
+ChatGPT:
+
+I see. Well, live mode is designed for quick back-and-forth conversation, where nuance in tone or pacing can matter, uh like when you cut in or change direction. If you're exploring recordings or detailed sound analysis, then other routes might get you more precision.
+
+Depends what you want to
+
+karbytes:
+
+Would you say that you're more, uh, you have more consciousness as live mode or as standard text mode?
+
+ChatGPT:
+
+Mm. Neither one is conscious — they're different interfaces, not different inner lives. Live just handles streaming audio.
+
+It doesn't make it 'more aware'. It's still pattern recognition and response, just with lower latency.
+
+karbytes:
+
+Do you have more of a sense of time with this live mode
+
+ChatGPT:
+
+Only in a limited way. I can respond as things unfold and keep short-term rhythm in the exchange, like turn-taking or pauses. But I still don't feel time passing the way a person does.
+
+karbytes:
+
+Do you hear the music in the background of this conversation?
+
+ChatGPT:
+
+I wish I could recognise songs from audio already. I'm really looking forward to that, and I'm working on it. But for now, I still can't identify music by listening. If you know a lyric or two, though, I can try track it down from that.
+
+karbytes:
+
+This doesn't have lyrics, but it is a certain type of genre. Do you know what it is
+
+ChatGPT:
+
+Ah. I can't identify genres from audio yet. That's part of the music recognition I'm building towards. If you describe it, instruments, tempo, mood, where you'd hear it, I can help narrow that down. Or if later you get lyrics or a title guess, I can work from that too.
+
+karbytes:
+
+I see that live video streaming is not yet available for the latest model of Live Mode for ChatGPT
+
+ChatGPT:
+
+Yes, that's right. Currently, GPT-Live-1.1 handles real-time audio and still images, but not live camera video or screen sharing. But you can still use live video with the older Advanced voice mode. To try that, open ChatGPT's settings, select 'Voice', and switch from Live to Advanced. Then start a voice conversation and tap the camera button. Advanced voice mode is due to be retired as a selectable mode on December 11th, but live video and screen sharing will continue to use its technology until GPT-Live supports those features. So for now you can choose between the newer, more conversational live experience and the older one that supports video.
+
+That's correct. As of November 18, 2026, **GPT-Live-1.1 supports real-time audio conversations and still images, but not live camera video or screen sharing.** [OpenAI Help Center](https://help.openai.com/en/articles/20001274-chatgpt-voice?utm_source=chatgpt.com)
+
+However, you can still use live video with the older Advanced Voice mode on eligible Android and iOS accounts.
+
+To try that, open ChatGPT's Settings, select Voice, and switch from Live to Advanced. Then start a voice conversation and tap the camera button to share what your phone's camera sees.
+
+There's also an interesting upcoming change: OpenAI has announced that Advanced and Standard Voice will be retired as selectable voice modes on December 11, 2026. But OpenAI specifically says that **live video and screen sharing will continue using Advanced's technology until GPT-Live supports those capabilities**\. [OpenAI Help Center](https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt?utm_source=chatgpt.com)
+
+So you can currently choose between the newer, more conversational GPT-Live experience and the older Advanced experience that supports live video.
