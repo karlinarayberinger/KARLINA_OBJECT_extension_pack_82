@@ -34,4 +34,18 @@ Finally, identify any discrepancies you notice while fulfilling this request.
 
 (This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
 
+ChatGPT:
+
+[Worked for 8m 31s]
+
+The micro-directory lists **394 of the 395 files** on `main`. All **394 listed raw links** lead to the repository files named in their visible URLs, and all **31 `(*)` links** open the correct web pages. [Live micro-directory](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/) · [Repository tree at commit `9846fc55578f`](https://github.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/tree/9846fc55578f3ddab68e39c91df1ffaffaf4320b)
+
+### Discrepancies
+
+- **Missing raw link.** `karbytes_in_the_big_green_thing_17november2026_p4.jpg` exists on `main`, and its raw URL serves the correct JPEG. Its row belongs immediately after `karbytes_in_the_big_green_thing_17november2026_p3.jpg` and before `karbytes_in_the_big_green_thing_25oct2026_p0.mp4`. [Raw JPEG](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/karbytes_in_the_big_green_thing_17november2026_p4.jpg) · [Position in the index](https://github.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/blob/9846fc55578f3ddab68e39c91df1ffaffaf4320b/index.html#L300-L302)
+
+- **Filename and content mismatch.** The link to `KARBYTES_FOR_LIFE_BLOG.html` serves the file at that exact path. Inside the file, both the browser title and the visible heading read `KARBYTES_ULTIMATE_ARCHIVE`. Its source differs from `KARBYTES_ULTIMATE_ARCHIVE_home_page.html` only on three lines containing dates or times. [Blog-named file](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/KARBYTES_FOR_LIFE_BLOG.html) · [Archive home page file](https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/KARBYTES_ULTIMATE_ARCHIVE_home_page.html)
+
+The listed raw URLs appear once each and follow the repository’s order. I verified 123 complete files against their Git hashes and checked matching byte ranges, total sizes, and ETags for the 271 larger files against URLs pinned to the audited commit. Every `(*)` destination returned HTTP 200 and served HTML identical to the raw file beside it, including the seven destinations on other GitHub Pages sites.
+
 
