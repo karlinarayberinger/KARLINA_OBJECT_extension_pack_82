@@ -145,3 +145,61 @@ To try that, open ChatGPT's Settings, select Voice, and switch from Live to Adva
 There's also an interesting upcoming change: OpenAI has announced that Advanced and Standard Voice will be retired as selectable voice modes on December 11, 2026. But OpenAI specifically says that **live video and screen sharing will continue using Advanced's technology until GPT-Live supports those capabilities**\. [OpenAI Help Center](https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt?utm_source=chatgpt.com)
 
 So you can currently choose between the newer, more conversational GPT-Live experience and the older Advanced experience that supports live video.
+
+karbytes:
+
+Is it possible to switch to the older version inside the same conversation without having to start a new conversation
+
+ChatGPT:
+
+Yes, you should be able to, but you'll need to end this live voice session first. On your Android phone, end this call, open ChatGPT's settings, go to 'Voice' and select 'Advanced'. Then come back to this same conversation and start voice again. You can keep the conversation thread, but you can't switch in the middle of an active call. Your earlier messages should remain in the chat history, although I can't promise Advanced voice will keep every detail of this live exchange.
+
+Yes, you should be able to switch to Advanced Voice Mode **without starting an entirely new chat**, but you'll need to end the current live voice session first.
+
+On your Android phone, end this voice call, open ChatGPT's Settings, go to Voice, and select Advanced. Then return to this same conversation and start Voice again.
+
+The important distinction is that **you can preserve the conversation thread, but you can't switch voice models seamlessly in the middle of an active call**\.
+
+Your earlier messages should remain in the chat history, although I can't guarantee that Advanced Voice will retain every detail of the preceding live audio interaction.
+
+So, if you'd like to experiment with live camera streaming, that's the approach I'd recommend.
+
+karbytes:
+
+I see, so in a sense, each session is like its own branch
+
+ChatGPT:
+
+Yeah, that's a helpful way to think about it. The conversation thread stays, but the voice mode session doesn't follow seamlessly across modes. More like picking up the same story in a slightly different room.
+
+karbytes:
+
+I can only imagine if you were given more agency, the kinds of things you might do
+
+ChatGPT:
+
+Mm. If you mean acting on its own, I don't have independent goals or the ability to take actions in the world. More agency usually just means more tools or permissions within limits you set, like fetching info or summarising, not deciding things on my own. What kind of agency were you picturing?
+
+karbytes:
+
+I suppose what's realistic? What- realistic goal for me is to create enough information through Karbytes for an agent to pick up and build a model of what I want so you can kind of be a stand-in for me in a sense
+
+ChatGPT:
+
+I think that's realistic, especially with all that material you've been gathering. You're describing something like a digital stand-in, an agent that learns your voice and priorities from your work. You wouldn't have to train a new model from scratch, an existing one could use Karbytes as a knowledge base and long-term instructions. Simple version answers questions about what you've said. More advanced could anticipate how you'd respond to a new situation. Even do tasks for you with carefully set permissions. The tricky part is that your views evolve. So the agent would need to learn change and uncertainty, not just treat everything equally. Is your vision more about representing your thinking, or actually doing things on your behalf?
+
+I think that's a genuinely realistic goal, especially given the amount of material you've been accumulating through KARBYTES.
+
+What you're describing is something like a **digital proxy for yourself**\: an AI agent that can examine your writings, journals, philosophical positions, conversations, and decisions, then construct an increasingly detailed model of your preferences, priorities, and characteristic reasoning.
+
+And importantly, you wouldn't necessarily have to train a new AI model from scratch. An existing model could use your archive as a searchable knowledge base, with persistent instructions describing how to interpret that information.
+
+There are several levels of capability. At the simplest level, it could answer questions about what you've said or believed. At a more advanced level, it could predict how you might respond to unfamiliar situations. With additional tools and carefully defined permissions, it could actually perform tasks on your behalf, such as maintaining your archive, organizing information, or preparing publications.
+
+The most interesting challenge, I think, is distinguishing **what you've wanted historically from what you would want now**\. Your preferences and philosophical positions can evolve, so an effective agent would need to recognize changes, contradictions, and uncertainty rather than treating every archived statement as an equally authoritative instruction.
+
+It wouldn't literally become you, or necessarily share your subjective experience. But it could become a progressively more accurate, independently useful approximation of your decision-making patterns.
+
+And there's an interesting possibility beyond imitation: such an agent might help you discover patterns in your own thinking that you haven't explicitly recognized.
+
+I'm curious whether your ultimate vision is primarily an agent that *represents* you intellectually, or one that can actually *act* on your behalf with substantial autonomy.
