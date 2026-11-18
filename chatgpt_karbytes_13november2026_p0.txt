@@ -4495,6 +4495,57 @@ karbytes:
 
 Explain the difference between GPT-6 Astra and GPT-6.2 Astra, why there seems to be no publicly-available GPT-6.1 Astra model (at least for Plus users) and also provide historical context for the newly released ChatGPT model.
 
+ChatGPT:
+
+[Worked for 3m 41s]
+
+**GPT-6.2 Astra is the public successor to GPT-6 Astra.** OpenAI launched it on **November 17, 2026**, alongside GPT-6.2 Sol. Compared with the original Astra, it scores higher on published tests of complex work, follows document and slide templates more closely, and costs less per token. The rollout includes **ChatGPT Plus in Work**, as well as Codex and the API. [ChatGPT Learn](https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol?utm_source=chatgpt.com)
+
+### Why there’s no GPT-6.1 Astra in your picker
+
+OpenAI released **GPT-6.1 Sol** and **GPT-6.1 Terra**, while the public Astra line went directly from **GPT-6 Astra** to **GPT-6.2 Astra**. The Work and API catalogs show the same pattern across plans. I found no public release under the name GPT-6.1 Astra and no statement from OpenAI explaining the numbering choice. The release history establishes that the variants moved on different schedules. The internal reason for the gap remains undisclosed. [OpenAI](https://openai.com/research/index/release/?utm_source=chatgpt.com)
+
+On Plus, **Work is where you can select Astra**. Regular Chat has a separate lineup. On eligible plans, its **GPT-6 Pro** option is powered by the original GPT-6 Astra, and the November 17 rollout added 6.2 Astra to Work and Codex. [OpenAI Help Center](https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt?utm_source=chatgpt.com)
+
+### What changed in Astra
+
+The original Astra could already work across codebases, use computers, and produce documents and presentations from templates. The 6.2 release improves how well it carries those tasks through. OpenAI reports closer matches to slide layouts and draft writing styles, cleaner code and more focused tests on complex changes, and more precise interaction with visual tools such as CAD software. [OpenAI](https://openai.com/index/gpt-6-astra/?utm_source=chatgpt.com)
+
+OpenAI’s launch report gives three direct comparisons with GPT-6 Astra. These are results on specific evaluations. [OpenAI](https://openai.com/index/introducing-gpt-6-2-astra-sol/?utm_source=chatgpt.com)
+
+[preformatted_text]
+
+| Evaluation | GPT-6.2 Astra result versus GPT-6 Astra |
+|---|---|
+| Agents’ Last Exam, multistep professional work | **5.2 points higher** at less than one-third the cost |
+| GDPval v2, OpenAI’s internal evaluation of longer professional assignments | **6.2 percentage points higher** with **22% fewer output tokens** |
+| Terminal-Bench-Science 0.1, scientific work in a terminal | **9 percentage points higher** at less than one-third the cost |
+
+[end preformatted_text]
+
+[preformatted_text]
+
+| Published specification | GPT-6 Astra | GPT-6.2 Astra |
+|---|---:|---:|
+| Standard API price per million input / cached input / output tokens, up to 272K input tokens | $10 / $1 / $50 | $8 / $0.40 / $40 [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com) |
+| Standard Work and Codex credit rates per million input / cached input / output tokens | 250 / 25 / 1,250 | 200 / 10 / 1,000 [ChatGPT Learn](https://learn.chatgpt.com/docs/pricing?utm_source=chatgpt.com) |
+| API context window / maximum output | 1,050,000 / 128,000 tokens | 1,050,000 / 128,000 tokens [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com) |
+| Listed knowledge cutoff | April 30, 2026 | May 18, 2026 [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com) |
+
+[end preformatted_text]
+
+For your Maximum Effort comparisons in Work, the benchmark results show what changed on those tasks. Actual time and usage still depend on the request, its context, and the tools used. OpenAI also says reasoning-effort levels do not map exactly between generations, so **Maximum** is the same picker setting for comparison, with room for differences in how much reasoning each model performs. [learn.chatgpt.com](https://learn.chatgpt.com/docs/models?surface=app\&utm_source=chatgpt.com)
+
+### How Astra got here
+
+- **September 3, 2026.** GPT-6 Astra debuted as the flagship after GPT-5.6 Sol, with an initial rollout to a limited set of organizations and broader access planned over the following days. Its launch emphasized computer use and carrying professional tasks through to finished deliverables. [OpenAI](https://openai.com/research/index/release/?utm_source=chatgpt.com)
+
+- **September 22 and 29.** GPT-6 Sol and Luna arrived first. GPT-6.1 Sol followed a week later, with OpenAI positioning it as close to Astra on complex work at one-fifth of Astra’s Standard API input and output token prices. [learn.chatgpt.com](https://learn.chatgpt.com/docs/changelog?utm_source=chatgpt.com)
+
+- **October 26.** GPT-6.1 Terra arrived in Work and Codex, with an emphasis on efficient visual understanding and precise computer use. [ChatGPT Learn](https://learn.chatgpt.com/docs/changelog?utm_source=chatgpt.com)
+
+- **November 17.** OpenAI refreshed Astra and Sol together. It also identified GPT-6.2 Astra as its first externally released model to reach the **High** threshold on its own measure of a model’s ability to accelerate AI research. [ChatGPT Learn](https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol?utm_source=chatgpt.com)
+
 ===
 
 karbytes:
