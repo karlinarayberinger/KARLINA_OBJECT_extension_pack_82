@@ -4456,6 +4456,41 @@ karbytes:
 
 Explain the difference between GPT-6.1 Sol and GPT-6.2 Sol and also provide historical context for the newly released ChatGPT model.
 
+ChatGPT:
+
+[Worked for 5m 1s]
+
+**GPT-6.2 Sol is a more capable and efficient successor to GPT-6.1 Sol at the same Standard per-token price.** OpenAI released it on **November 17, 2026**, the day you switched, alongside the flagship GPT-6.2 Astra. The release covers ChatGPT Work, Codex, and the API. In ChatGPT, the new models are selected through Work. [ChatGPT Learn](https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol?utm_source=chatgpt.com)
+
+The clearest head-to-head result is on **GDPval v2**, OpenAI’s internal evaluation of professional assignments that take several steps and draw on real projects. GPT-6.2 Sol scored **5.3 points higher** than GPT-6.1 Sol. OpenAI also reports that the new family uses fewer output tokens on demanding tasks and expects Sol users to complete more work on the same paid plan. That makes the upgrade most relevant to jobs where the model has to gather material, check it, and produce a finished result. [OpenAI](https://openai.com/index/introducing-gpt-6-2-astra-sol/?utm_source=chatgpt.com)
+
+[preformatted_text]
+
+| Published specification | GPT-6.1 Sol | GPT-6.2 Sol |
+|---|---:|---:|
+| Estimated local messages per five hours on Plus | 15–160 | 17–180 [ChatGPT Learn](https://learn.chatgpt.com/docs/pricing?utm_source=chatgpt.com) |
+| Standard API price per million input / cached input / output tokens, up to 272K input tokens | $2 / $0.10 / $10 | $2 / $0.10 / $10 [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6.1-sol?utm_source=chatgpt.com) |
+| API context window / maximum output | 1,050,000 / 128,000 tokens | 1,050,000 / 128,000 tokens [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6.1-sol?utm_source=chatgpt.com) |
+| Listed knowledge cutoff | April 30, 2026 | June 1, 2026 [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6.1-sol?utm_source=chatgpt.com) |
+
+[end preformatted_text]
+
+The Plus figures are estimates for local messages. A long Work run can use a different amount depending on its context, reasoning, tool calls, and caching. OpenAI also lists identical Standard credit rates for both models in Work and Codex. [ChatGPT Learn](https://learn.chatgpt.com/docs/pricing?utm_source=chatgpt.com)
+
+Your switch kept **Maximum Effort** selected. Max gives the selected model more time to reason, and OpenAI says effort levels do not map exactly across model generations. So Max on both models is a comparison of the same user-facing setting, with room for differences in actual reasoning time and usage. The launch default for new Work chats on supported consumer plans is **6.2 Sol at Light**, a different configuration from yours. [ChatGPT Learn](https://learn.chatgpt.com/docs/models?surface=app\&utm_source=chatgpt.com)
+
+**How the Sol line got here**
+
+- **July 9, 2026.** GPT-5.6 launched with Sol as that family’s highest-capability model, alongside Terra and Luna. [OpenAI API](https://developers.openai.com/api/docs/changelog?utm_source=chatgpt.com)
+
+- **September 3.** GPT-6 Astra arrived as the flagship for difficult work across coding, research, computer use, and document creation. [OpenAI API](https://developers.openai.com/api/docs/changelog?utm_source=chatgpt.com)
+
+- **September 22.** The first GPT-6 Sol and GPT-6 Luna rolled out. Sol was aimed at complex coding and workflows involving tools, at lower token prices than its GPT-5.6 predecessor. [ChatGPT Learn](https://learn.chatgpt.com/docs/changelog?utm_source=chatgpt.com)
+
+- **September 29.** GPT-6.1 Sol followed just one week later. OpenAI positioned it as offering performance close to GPT-6 Astra on complex work at a lower cost. Seven weeks later, 6.2 Sol became the everyday Work model in a release that also refreshed the Astra flagship. [ChatGPT Learn](https://learn.chatgpt.com/docs/changelog?utm_source=chatgpt.com)
+
+For your KARBYTES work, I’d expect the published gains to be most relevant when a single request combines several steps, such as retrieving an exact public file, comparing it with a saved copy, checking its metadata, and writing from the verified material. Your audio and video comparisons are a separate question. Both API model listings specify **text and image inputs and text output**. For a recording in Work, the review still depends on which tools expose the frames and audio and how much of the recording they actually process. [OpenAI API](https://developers.openai.com/api/docs/models/gpt-6.1-sol?utm_source=chatgpt.com)
+
 ===
 
 karbytes:
