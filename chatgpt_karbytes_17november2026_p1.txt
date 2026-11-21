@@ -125,3 +125,13 @@ Also verify whether or not every hyperlink on that micro-directory web page whos
 Finally, identify any discrepancies you notice while fulfilling this request.
 
 (This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 18m 14s]
+
+All **412 repository files** have exactly one working full-URL raw link, and each link serves the file named in its visible URL. All **33 `(*)` links** returned HTTP 200 and served HTML identical to the adjacent raw file. The live micro-directory matched `index.html` on `main` at commit `b67a75094767`. [Live micro-directory](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/) · [Repository snapshot](https://github.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/tree/b67a75094767eac96f616996a0bdadc386b63060)
+
+**The only discrepancy is a two-row swap.** In GitHub’s file listing, `chatgpt_karbytes_19november2026_p0.txt` immediately precedes `chatgpt_karbytes_19october2026_a0_detailed_essay_[generated_by_chatgpt_17nov2026].md`. The micro-directory has those two entries reversed at positions 48 and 49. Swapping them would make the entire list match GitHub’s order. The two October 25 video entries flagged last time are now correctly placed. [Affected index rows](https://github.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/blob/b67a75094767eac96f616996a0bdadc386b63060/index.html#L130)
+
+I verified 131 complete files against their Git hashes and matched byte ranges, total sizes, and ETags for the other 281.
