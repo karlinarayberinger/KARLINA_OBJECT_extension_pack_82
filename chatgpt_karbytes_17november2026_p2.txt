@@ -3075,3 +3075,62 @@ What I would like you to do now (just to be extra thorough with analyzing the SO
 Select up to five sound tracks (where duplicate selections are permitted).
 
 Then click the play button and allow up to five minutes of playtime to elapse before reporting your results here in this conversation.
+
+ChatGPT:
+
+[Worked for 6m 58s]
+
+I used the live application with **five playback instances**, including a duplicate. I observed it for approximately **4 minutes 59.45 seconds** on November 22, 2026. All five elapsed counters showed **299 seconds** at the final reading.
+
+I then refreshed the page to stop playback, which reset the application.
+
+Final readings:
+
+[preformatted_text]
+
+| Slot | Selected MP3 filename | Completed loops |
+|---|---|---:|
+| 1 | frogs_croaking_in_castro_valley_california_21_april_2022.mp3 | 16 |
+| 2 | frogs_croaking_in_castro_valley_california_21_april_2022.mp3 | 16 |
+| 3 | guitar_karbytes_20august2024.mp3 | 11 |
+| 4 | guitar_karbytes_13july2024.mp3 | 5 |
+| 5 | karbytes_drums_20_october_2023.mp3 | 1 |
+
+[end preformatted_text]
+
+The application registered **49 completed playbacks** across those five instances. These counts exclude any unfinished playback underway when I stopped the session.
+
+The progression I observed was:
+
+[preformatted_text]
+
+| Displayed elapsed seconds | Frog 1 | Frog 2 | August guitar | July guitar | October drums |
+|---:|---:|---:|---:|---:|---:|
+| 59 | 3 | 3 | 2 | 1 | 0 |
+| 119 | 6 | 6 | 4 | 2 | 0 |
+| 179 | 9 | 9 | 6 | 3 | 0 |
+| 239 | 13 | 13 | 9 | 4 | 1 |
+| 299 | 16 | 16 | 11 | 5 | 1 |
+
+[end preformatted_text]
+
+The duplicate frog selections produced separate output entries and matched at every checkpoint. The drum recording’s first completion appeared between the 179-second and 239-second readings.
+
+The application displayed these event timestamps. All clock times below are **Pacific Standard Time, November 22, 2026**:
+
+[preformatted_text]
+
+| Event | Unix epoch milliseconds | PST |
+|---|---:|---|
+| Page loaded | 1795382845046 | 13:27:25.046 |
+| Added slot 2 | 1795382854929 | 13:27:34.929 |
+| Added slot 3 | 1795382855200 | 13:27:35.200 |
+| Added slot 4 | 1795382856257 | 13:27:36.257 |
+| Added slot 5 | 1795382857327 | 13:27:37.327 |
+| Start button clicked | 1795382910898 | 13:28:30.898 |
+
+[end preformatted_text]
+
+I recorded the final counters at approximately **13:33:30.346 PST**, corresponding to epoch value **1795383210346**. The subsequent refresh generated a new page-load timestamp of **1795383210580**, confirming that the running instance had been replaced by a fresh initial state.
+
+The start and add buttons disappeared after starting, the selected filenames remained visible, and the counters advanced without further interaction until the final refresh.
