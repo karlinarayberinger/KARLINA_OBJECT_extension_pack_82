@@ -1,0 +1,11 @@
+/**
+ * file: journal_karbytes_22november2026_p0.txt
+ * type: plain-text
+ * date: 22_NOVEMBER_2026
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+Instances of the string "relevant_KARBYTES_files[x]" (quotations not included and x replaced by some nonnegative integer) which are highlighted cyan (i.e. hexidecimal color code #00ffff) in the web page named XYZ are considered by karbytes to pertain to the most relevant of KARBYTES files referenced in that web page.
+
+XYZ is a placeholder for the name of a KARBYTES web page which is assumed to be a conversation transcript of a conversation between karbytes and ChatGPT and which contains a preface (before the conversation transcript) consisting of a list of relevant_KARBYTES_files which are each assigned a nonnegative integer index (in the style of an array in a C++ or JavaScript program) starting with index 0 and such that each index is listed in ascending order with no index numbers skipped.
