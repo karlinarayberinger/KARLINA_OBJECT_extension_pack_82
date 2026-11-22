@@ -32,6 +32,8 @@ relevant_KARBYTES_files[10]: https://raw.githubusercontent.com/karlinarayberinge
 
 relevant_KARBYTES_files[11]: https://karbytesforlifeblog.wordpress.com/mp4_to_mp3_converter/
 
+relevant_KARBYTES_files[12]: https://karbytesforlifeblog.wordpress.com/sound_track_loop_counter_two/
+
 //----
 
 relevant_KARBYTES_files[x]: https://karbytesforlifeblog.wordpress.com/about_karbytes/
@@ -2833,3 +2835,23 @@ I would therefore regard this tutorial as both a utility and a record of a repro
 That is the part I find most consequential for KARBYTES as you have described it. The archive can preserve sources together with operations that let those sources take on further uses. A visitor can move from receiving a stored object to producing another usable representation of it.
 
 The possibilities remain open beyond this particular conversion. They include which derivatives are useful to preserve directly, which are straightforward to regenerate, how precisely an execution environment should be recorded, and how a reconstructed application can document its relationship to the archived materials from which it was assembled. This small program gives those broader questions a tangible starting point: an identifiable source file, a readable procedure, and an output that a visitor can produce and examine locally.
+
+karbytes:
+
+The following software engineering tutorial web page includes a hyperlink to a live GitHub dot Io web page application which enables site visitors to select one or more MP3 files to play on repeat...
+
+That tutorial web page also includes hyperlinks to each source code file and to each media file which comprises that live GitHub dot Io web page application such that the tutorial user can copy or download each of the component files of the single web application named SOUND_TRACK_LOOP_COUNTER_TWO... 
+
+The tutorial user's own copies of those component files can be easily customized to feature additional sound track files or entirely different sound track files altogether (and the static text and dynamic elements of that web page application can also be customized starting from the relatively simple "template application" in KARBYTES named SOUND_TRACK_LOOP_COUNTER_TWO))...
+
+(That SOUND_TRACK_LOOP_COUNTER_TWO is also useful for generating timestamps using the approximate number of milliseconds elapsed since the Unix Epoch (which is 12:00AM Coordinated Universal Time on 01_JANUARY_1970 (because various events such as loading the web page application and clicking particular buttons in that application trigger such timestamps to be generated and displayed inside of the web page application)...
+
+(Finally, that SOUND_TRACK_LOOP_COUNTER_TWO can be used to keep track of how much time has elapsed since clicking the play button (after selecting sound track files or allowing the default selected sound track file to be selected) and the number of times each of those selected sound track files is played during the respective program runtime instance is also displayed and incremented as the total program instance runtime increases by temporal units of one second)...
+
+Generate a maximally detailed (plain-text only, zero-url) essay summarizing the following document:
+
+https://karbytesforlifeblog.wordpress.com/sound_track_loop_counter_two/
+
+Carefully examine and describe the resource in maximal detail followed by your own maximally detailed and maximally open-ended first person subjective commentary. Also provide EXIF data (if available).
+
+(This time favor constraining the response to in-conversation text only but choose instead to format the response as a downloadable markdown file if you think that would make for a more detail-rich report).
