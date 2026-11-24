@@ -1,0 +1,43 @@
+/**
+ * file: journal_karbytes_23november2026_p1.txt
+ * type: plain-text
+ * date: 23_NOVEMBER_2026
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+Right now I'm in the midst of updating at least four different ChatGPT conversation transcript files which are stored inside of the public @karlinarayberinger GitHub repository named KARLINA_OBJECT_extension_pack_82 (and the URLs of those four (plain-text) transcript files are as follows):
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_13november2026_p0.txt
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_17november2026_p1.txt
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_17november2026_p2.txt
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/chatgpt_karbytes_19november2026_p0.txt
+
+In terms of how I ultimately intend for those plain-text files to reference each other, chatgpt_karbytes_17november2026_p2.txt is the outermost layer in terms of how those plain-text files cross reference each other. I also intend for chatgpt_karbytes_17november2026_p2.txt to be the skeletal plain-text template for a live GitHub dot Io hosted HTML web page version of chatgpt_karbytes_17november2026_p2.txt (which will tentatively be named something like chatgpt_karbytes_24november2026_a0 (as a live web page as that live web page is rendered in a web browser)). That live web page will contain hyperlinks and be styled with karbytes_aesthetics.css such that the page has special color formatting (namely green text against a back web page background) while the source code of that web page will appear as raw HTML source code without any CSS formatting nor interactive web page elements such as hyperlinks.
+
+I differentiate a live GitHub dot Io hosted KARBYTES web page from its raw HTML source code file by starting the file name of the raw HTML source code with unlisted_web_page_ to signify that the raw HTML source code is not rendered the same way as its live GitHub dot Io web page version is (and those differences are essentially due to those files belonging to different file directories as follows):
+
+// raw HTML source code file of the live GitHub dot Io web page named chatgpt_karbytes_24november2026_a0
+
+https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_82/main/unlisted_web_page_chatgpt_karbytes_24november2026_a0.html
+
+// live GitHub dot Io web page rendered from the raw HTML source code file named unlisted_web_page_chatgpt_karbytes_24november2026_a0.html
+
+https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/unlisted_web_page_chatgpt_karbytes_24november2026_a0.html
+
+* * *
+
+Note that, at this time (which is the time at which this paragraph is being written by karbytes (which is within five minutes of 3:36PM Pacific Standard Time on 23_NOVEMBER_2026)), neither unlisted_web_page_chatgpt_karbytes_24november2026_a0.html nor unlisted_web_page_chatgpt_karbytes_24november2026_a0.html yet exist inside of the KARBYTES micro-directory named raw_github_files_directory_KARLINA_OBJECT_extension_pack_82 (and the surface-level access point to that micro-directory is the following Uniform Resource Locator (i.e. URL)):
+
+https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/
+
+* * *
+
+I expect chatgpt_karbytes_19november2026_p0.txt to be the "deepest" layer of the logically-linked "network" of plain-text files whose surface-level entry point is chatgpt_karbytes_17november2026_p2.txt.
+
+I expect chatgpt_karbytes_17november2026_p2.txt to reference chatgpt_karbytes_13november2026_p0.txt (which is considered to be one level "below" chatgpt_karbytes_17november2026_p2.txt).
+
+I expect chatgpt_karbytes_13november2026_p0.txt to reference chatgpt_karbytes_19november2026_p0.txt.
