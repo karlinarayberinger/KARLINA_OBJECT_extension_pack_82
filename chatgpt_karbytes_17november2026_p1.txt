@@ -270,3 +270,22 @@ On the following web page, verify whether or not the sub-index pages whose index
 https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/
 
 (This time favor constraining the response to in-conversation text only instead of generating a downloadable markdown file).
+
+ChatGPT:
+
+[Worked for 2m 15s]
+
+**Yes. Sub-index pages 285–305 contain all 468 audited KOEP82 URLs, each exactly once.** All 21 pages loaded successfully. I compared exact destinations without regard to order. [KOEP82 micro-directory](https://karlinarayberinger.github.io/KARLINA_OBJECT_extension_pack_82/) · [Precision batch index](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/)
+
+[preformatted_text]
+
+| Check | Result |
+|---|---:|
+| Raw GitHub file URLs present | 434 of 434 |
+| Destinations of `(*)` links present | 34 of 34 |
+| Links within the batches that display their exact destination URL | 469 of 469 |
+| Parent index links that display their exact sub-index URL | 21 of 21 |
+
+[end preformatted_text]
+
+The one additional link points to the micro-directory itself and appears first on [page 285](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_285.html). Both November 24 transcripts are present. `chatgpt_karbytes_24november2026_p0.txt` is on page 300, and `chatgpt_karbytes_24november2026_p1.txt` is on page 299. [Page 300](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_300.html) · [Page 299](https://karbytessupporter.github.io/karbytes_wayback_machine_saves_precision_batches_extension_1/sub-index_page_299.html)
